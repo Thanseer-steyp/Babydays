@@ -123,5 +123,71 @@
       }
     ],
     "created_at": "2026-05-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Baby Bath Towel with Cute Prints ( Pack of 3 )",
+    "slug": "baby-bath-towel",
+    "age_category": "baby_unisex",
+    "product_category": "bath-towels",
+    "mrp": "799",
+    "price": 390,
+    "lowest_variant_price": "799",
+    "lowest_variant_mrp": "390",
+    "main_media": "/products/p21.jpeg",
+    "delivery_charge": "0",
+    "material_type": "Muslin",
+    "description": "",
+    "features": "🌧️ Designed with Hollow Conjugate Virgin R1 fiber foam\n👶 Prevents flat head syndrome",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "70x70",
+        "color": null,
+        "image": "/products/p21.jpeg",
+        "mrp": "799",
+        "price": "390",
+        "stock_qty": 6,
+        "is_available": true
+      },
+      {
+        "id": 2,
+        "size": "70x70",
+        "color": null,
+        "image": "/products/p22.jpeg",
+        "mrp": "799",
+        "price": "390",
+        "stock_qty": 6,
+        "is_available": true
+      },
+      {
+        "id": 3,
+        "size": "70x70",
+        "color": null,
+        "image": "/products/p23.jpeg",
+        "mrp": "799",
+        "price": "390",
+        "stock_qty": 6,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/p21.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/p22.jpeg",
+        "is_main": true
+      }
+    
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
   }
 ]

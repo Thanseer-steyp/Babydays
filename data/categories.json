@@ -8,5 +8,15 @@
     "bannerBg": "from-pink-100 via-rose-50 to-white",
     "accentColor": "#e91e8c",
     "icon": "/products/img11.jpeg"
+  },
+  {
+    "id": 2,
+    "slug": "bath-towels",
+    "name": "Bath Towels",
+    "tagline": "Hello world",
+    "bannerImage": "/products/b21.png",
+    "bannerBg": "from-pink-100 via-rose-50 to-white",
+    "accentColor": "#e91e8c",
+    "icon": "/products/p21.jpeg"
   }
 ]
