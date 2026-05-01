@@ -7,8 +7,8 @@
     "product_category": "snuggies",
     "mrp": "999",
     "price": 490,
-    "lowest_variant_price": "490",
     "lowest_variant_mrp": "999",
+    "lowest_variant_price": "490",
     "main_media": "/products/img3.jpeg",
     "delivery_charge": "49",
     "material_type": "Cotton Fabric",
@@ -107,17 +107,17 @@
         "is_main": true
       },
       {
-        "id": 10,
+        "id": 12,
         "media": "/products/imgin.jpeg",
         "is_main": true
       },
       {
-        "id": 10,
+        "id": 13,
         "media": "/products/imgin2.jpeg",
         "is_main": true
       },
       {
-        "id": 10,
+        "id": 14,
         "media": "/products/video1.mp4",
         "is_main": true
       }
@@ -132,8 +132,8 @@
     "product_category": "bath-towels",
     "mrp": "799",
     "price": 390,
-    "lowest_variant_price": "799",
-    "lowest_variant_mrp": "390",
+    "lowest_variant_mrp": "799",
+    "lowest_variant_price": "390",
     "main_media": "/products/p21.jpeg",
     "delivery_charge": "0",
     "material_type": "Muslin",

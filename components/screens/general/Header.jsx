@@ -336,8 +336,8 @@ export default function Header() {
           <Link href="/" className="flex-shrink-0">
             <img
               src="/icons/logo.png"
-              alt="Baby Store"
-              className="h-10 w-auto"
+              alt="BabyDays"
+              className="h-14 w-22"
               onError={(e) => {
                 e.currentTarget.style.display = "none";
               }}

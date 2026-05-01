@@ -5,12 +5,16 @@ const BabydayFooter: React.FC = () => {
     <footer className="w-full bg-gray-50 font-sans">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-10">
           {/* Brand & Contact */}
-          <div className="flex flex-col gap-4">
+          <div className="col-span-2 sm:col-span-1 flex flex-col gap-4">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <img src="/icons/logo.png" alt="Babyday Logo" className="h-14 w-20" />
+              <img
+                src="/icons/logo.png"
+                alt="Babyday Logo"
+                className="h-14 w-20"
+              />
             </div>
 
             {/* Contact Info */}
@@ -42,8 +46,8 @@ const BabydayFooter: React.FC = () => {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <span>
-                  <strong className="text-gray-800">Call Us :</strong>{" "}
-                  +91 9746976740
+                  <strong className="text-gray-800">Call Us :</strong> +91
+                  9746976740
                 </span>
               </div>
 
@@ -85,7 +89,7 @@ const BabydayFooter: React.FC = () => {
                       {item}
                     </a>
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>
@@ -106,7 +110,7 @@ const BabydayFooter: React.FC = () => {
                       {item}
                     </a>
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>
@@ -131,12 +135,10 @@ const BabydayFooter: React.FC = () => {
 
         {/* Center: Coupon Banner */}
         <div className="flex items-center gap-1.5 text-xs text-gray-500 bg-orange-50 border border-orange-100 rounded-full px-4 py-1.5">
-
           <span>
-            Apply coupon{" "}
-            <strong className="text-orange-500">FIRST5</strong> to get{" "}
-            <strong className="text-orange-500">5% OFF</strong> on your first
-            purchase!
+            Apply coupon <strong className="text-orange-500">FIRST5</strong> to
+            get <strong className="text-orange-500">5% OFF</strong> on your
+            first purchase!
           </span>
         </div>
 
