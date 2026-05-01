@@ -16,7 +16,7 @@ export default function Page() {
         <Hero />
         <Home />
         <a href="/deals">
-          <img src="/images/deals/hotdeal.png" alt="hotdeal" />
+          <img src="/images/deals/hotdeal.png" alt="hotdeal" className="h-36 sm:h-72 w-full"/>
         </a>
       </div>
     </SplashScreen>
