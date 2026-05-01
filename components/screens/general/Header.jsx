@@ -369,7 +369,7 @@ export default function Header() {
               />
               <button
                 onClick={handleSearch}
-                className="px-4 py-2.5 text-gray-400 hover:text-teal-500 transition-colors border-l border-gray-200"
+                className="px-4 py-2.5 text-black hover:text-teal-500 transition-colors border-l border-gray-200"
               >
                 <SearchIcon />
               </button>
@@ -473,7 +473,7 @@ export default function Header() {
                   }}
                   onKeyDown={(e) => e.key === "Enter" && handleSearch()}
                   placeholder="Search products…"
-                  className="flex-1 px-4 py-2.5 text-sm outline-none"
+                  className="flex-1 px-4 py-2.5 text-sm outline-none text-black"
                 />
                 <button
                   onClick={handleSearch}
