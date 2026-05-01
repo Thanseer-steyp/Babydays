@@ -142,7 +142,7 @@ useEffect(() => {
 
   return (
     <main
-      className="w-full bg-gray-50 min-h-screen"
+      className="w-full bg-gray-50"
       style={{ fontFamily: "'Nunito', sans-serif" }}
     >
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 py-8 flex flex-col gap-16">

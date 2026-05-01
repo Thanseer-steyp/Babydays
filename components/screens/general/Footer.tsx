@@ -10,7 +10,7 @@ const BabydayFooter: React.FC = () => {
           <div className="flex flex-col gap-4">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <img src="/icons/logo.png" alt="Babyday Logo" className="h-14 w-32" />
+              <img src="/icons/logo.png" alt="Babyday Logo" className="h-14 w-20" />
             </div>
 
             {/* Contact Info */}
@@ -29,7 +29,7 @@ const BabydayFooter: React.FC = () => {
                 </svg>
                 <span>
                   <strong className="text-gray-800">Address:</strong>{" "}
-                  osperb edisonvalley, NH-966, Up hill
+                  Trivandrum, Kerala
                 </span>
               </div>
 
@@ -43,7 +43,7 @@ const BabydayFooter: React.FC = () => {
                 </svg>
                 <span>
                   <strong className="text-gray-800">Call Us :</strong>{" "}
-                  +91 8593904040
+                  +91 9746976740
                 </span>
               </div>
 
@@ -63,7 +63,7 @@ const BabydayFooter: React.FC = () => {
                 </svg>
                 <span>
                   <strong className="text-gray-800">Email :</strong>{" "}
-                  info@babyday.com
+                  connect.babydays@gmail.com
                 </span>
               </div>
             </div>
@@ -123,10 +123,10 @@ const BabydayFooter: React.FC = () => {
           <p>
             From{" "}
             <a href="#" className="text-teal-500 hover:underline font-medium">
-              osperb
+              I&T Creations
             </a>
           </p>
-          <p>© 2026 zicato innovations All rights reserved</p>
+          <p>© 2026 I&T Creations All rights reserved</p>
         </div>
 
         {/* Center: Coupon Banner */}
@@ -134,8 +134,8 @@ const BabydayFooter: React.FC = () => {
 
           <span>
             Apply coupon{" "}
-            <strong className="text-orange-500">FIRST20</strong> to get{" "}
-            <strong className="text-orange-500">20% OFF</strong> on your first
+            <strong className="text-orange-500">FIRST5</strong> to get{" "}
+            <strong className="text-orange-500">5% OFF</strong> on your first
             purchase!
           </span>
         </div>
