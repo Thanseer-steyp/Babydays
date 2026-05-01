@@ -29,7 +29,6 @@ useEffect(() => {
     );
 
     setProducts(filteredProducts);
-    console.log("Slug:", slug);
   } catch (err) {
     setProducts([]);
   } finally {

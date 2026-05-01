@@ -14,9 +14,9 @@
     "axios": "^1.13.2",
     "jwt-decode": "^4.0.0",
     "lucide-react": "^0.561.0",
-    "next": "16.0.4",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "next": "^16.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "react-hot-toast": "^2.6.0",
     "swiper": "^12.1.3"
   },

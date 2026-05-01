@@ -54,12 +54,6 @@ export default function HeroSection() {
   image: cat.icon, // ✅ use icon for circle UI
 }));
 
-  // useEffect(() => {
-  //   axiosPublic
-  //     .get(`public/categories/`)
-  //     .then((res) => setCategories(res.data))
-  //     .catch((err) => console.error("Failed to load categories", err));
-  // }, []);
 
 
 

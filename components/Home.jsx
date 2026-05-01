@@ -91,35 +91,9 @@ export default function HomePage() {
   const [productsByCategory, setProductsByCategory] = useState({});
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const catRes = await axiosPublic.get("public/categories/");
-  //       const cats = catRes.data;
-  //       setCategories(cats);
 
-  //       const productMap = {};
-  //       await Promise.all(
-  //         cats.map(async (cat) => {
-  //           try {
-  //             const prodRes = await axiosPublic.get(
-  //               `public/products/?category=${cat.slug}`,
-  //             );
-  //             productMap[cat.slug] = prodRes.data.slice(0, 10);
-  //           } catch {
-  //             productMap[cat.slug] = [];
-  //           }
-  //         }),
-  //       );
-  //       setProductsByCategory(productMap);
-  //     } catch (err) {
-  //       console.error("Home fetch error:", err);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
+
+
 
 useEffect(() => {
   try {
