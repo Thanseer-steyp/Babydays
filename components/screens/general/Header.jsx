@@ -184,64 +184,6 @@ function useOutsideClick(ref, cb) {
   }, [ref, cb]);
 }
 
-// ── UserMenu
-function UserMenu({ user, logout }) {
-  const [open, setOpen] = useState(false);
-  const ref = useRef(null);
-  useOutsideClick(ref, () => setOpen(false));
-  const initial =
-    user.name?.[0]?.toUpperCase() ?? user.username?.[0]?.toUpperCase() ?? "U";
-
-  return (
-    <div className="relative" ref={ref}>
-      <button
-        onClick={() => setOpen((o) => !o)}
-        className="hidden sm:flex flex-col items-center gap-0.5 text-teal-600 hover:text-teal-700 transition-colors"
-      >
-        <div className="w-9 h-9 rounded-md bg-teal-100 flex items-center justify-center text-base font-bold text-teal-700">
-          {initial}
-        </div>
-      </button>
-
-      {open && (
-        <div className="absolute right-0 top-full mt-2 bg-white border border-gray-200 rounded-xl shadow-xl z-50 w-52 py-2">
-          <div className="px-4 py-2 border-b border-gray-100">
-            <p className="text-sm font-bold text-gray-800 truncate">
-              {user?.name || user?.username}
-            </p>
-            <p className="text-xs text-gray-500 truncate">{user.email}</p>
-          </div>
-          <Link
-            href="/orders"
-            className="flex items-center gap-2 px-4 py-2.5 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
-            onClick={() => setOpen(false)}
-          >
-            <OrdersIcon /> My Orders
-          </Link>
-          <Link
-            href="/wishlist"
-            className="flex items-center gap-2 px-4 py-2.5 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
-            onClick={() => setOpen(false)}
-          >
-            <HeartIcon /> Wishlist
-          </Link>
-          <div className="border-t border-gray-100 mt-1 pt-1">
-            <button
-              onClick={() => {
-                setOpen(false);
-                logout();
-              }}
-              className="flex items-center gap-2 px-4 py-2.5 text-sm text-red-500 hover:bg-red-50 transition-colors w-full"
-            >
-              <LogOutIcon /> Sign Out
-            </button>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
-
 // ── Main Header
 export default function Header() {
   const router = useRouter();
@@ -257,32 +199,32 @@ export default function Header() {
   const searchDropdownRef = useRef(null);
   useOutsideClick(searchDropdownRef, () => setShowSearchDropdown(false));
 
-useEffect(() => {
-  if (!searchValue.trim()) {
-    setSearchResults([]);
-    setShowSearchDropdown(false);
-    return;
-  }
+  useEffect(() => {
+    if (!searchValue.trim()) {
+      setSearchResults([]);
+      setShowSearchDropdown(false);
+      return;
+    }
 
-  const timer = setTimeout(() => {
-    setIsSearching(true);
+    const timer = setTimeout(() => {
+      setIsSearching(true);
 
-    const q = searchValue.toLowerCase();
+      const q = searchValue.toLowerCase();
 
-    const filtered = productsData.filter((product) => {
-      return (
-        product.title.toLowerCase().includes(q) ||
-        product.product_category.toLowerCase().includes(q)
-      );
-    });
+      const filtered = productsData.filter((product) => {
+        return (
+          product.title.toLowerCase().includes(q) ||
+          product.product_category.toLowerCase().includes(q)
+        );
+      });
 
-    setSearchResults(filtered);
-    setShowSearchDropdown(true);
-    setIsSearching(false);
-  }, 300);
+      setSearchResults(filtered);
+      setShowSearchDropdown(true);
+      setIsSearching(false);
+    }, 300);
 
-  return () => clearTimeout(timer);
-}, [searchValue]);
+    return () => clearTimeout(timer);
+  }, [searchValue]);
 
   const [apiCategories, setApiCategories] = useState([]);
   const browseRef = useRef(null);
@@ -579,41 +521,6 @@ useEffect(() => {
 
               <div className="border-t border-gray-100 my-2" />
               <div className="flex gap-4 px-1">
-                {user ? (
-                  <>
-                    <Link
-                      href="/wishlist"
-                      onClick={() => setMobileOpen(false)}
-                      className="flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-teal-500 py-1"
-                    >
-                      <HeartIcon /> Wishlist
-                    </Link>
-                    <Link
-                      href="/orders"
-                      onClick={() => setMobileOpen(false)}
-                      className="flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-teal-500 py-1"
-                    >
-                      <OrdersIcon /> Orders
-                    </Link>
-                    <button
-                      onClick={() => {
-                        setMobileOpen(false);
-                        logout();
-                      }}
-                      className="flex items-center gap-2 text-sm font-semibold text-red-500 py-1"
-                    >
-                      <LogOutIcon /> Sign Out
-                    </button>
-                  </>
-                ) : (
-                  <Link
-                    href="/auth"
-                    onClick={() => setMobileOpen(false)}
-                    className="flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-teal-500 py-1"
-                  >
-                    <UserIcon /> Login / Register
-                  </Link>
-                )}
               </div>
             </div>
           </div>
