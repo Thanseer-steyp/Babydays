@@ -4,7 +4,7 @@ const BabydayFooter: React.FC = () => {
   return (
     <footer className="w-full bg-gray-50 font-sans">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-10">
           {/* Brand & Contact */}
           <div className="col-span-2 sm:col-span-1 flex flex-col gap-4">

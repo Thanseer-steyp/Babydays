@@ -52,7 +52,7 @@ const displayImage = category?.bannerImage || category?.icon;
   }
 
   return (
-    <main className="min-h-screen bg-gray-50" style={{ fontFamily: "'Nunito', sans-serif" }}>
+    <main className=" bg-gray-50" style={{ fontFamily: "'Nunito', sans-serif" }}>
       {/* Hero banner */}
       <div className="relative w-full" style={{ height: "280px" }}>
         
