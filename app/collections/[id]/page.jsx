@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { use } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import axiosPublic from "@/components/config/AxiosPublic";
 import ProductCard from "@/components/ProductCard";
 
 const COLLECTIONS = {

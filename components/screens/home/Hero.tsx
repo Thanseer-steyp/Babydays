@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
-import axiosPublic from "@/components/config/AxiosPublic";
 import heroData from "@/data/hero.json";
 import categoryData from "@/data/categories.json";
 
