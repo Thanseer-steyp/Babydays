@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "slug": "snuggies",
+    "name": "Snuggies",
+    "tagline": "Hello world",
+    "bannerImage": "/products/banner1.png",
+    "bannerBg": "from-pink-100 via-rose-50 to-white",
+    "accentColor": "#e91e8c",
+    "icon": "/products/img11.jpeg"
+  }
+]

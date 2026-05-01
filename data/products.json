@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "title": "Baby Washable Snug Fit Padded Shorts ( Pack of 2 )",
+    "slug": "snug-fit-padded-shorts",
+    "age_category": "baby_unisex",
+    "product_category": "snuggies",
+    "mrp": "999",
+    "price": 490,
+    "lowest_variant_price": "490",
+    "lowest_variant_mrp": "999",
+    "main_media": "/products/img3.jpeg",
+    "delivery_charge": "49",
+    "material_type": "Cotton Fabric",
+    "description": "",
+    "features": "🌧️ Designed with Hollow Conjugate Virgin R1 fiber foam\n👶 Prevents flat head syndrome",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "L",
+        "color": null,
+        "image": "/products/v1.png",
+        "mrp": "999",
+        "price": "490",
+        "stock_qty": 6,
+        "is_available": true
+      },
+      {
+        "id": 2,
+        "size": "S",
+        "color": null,
+        "image": "/products/v2.png",
+        "mrp": "999",
+        "price": "500",
+        "stock_qty": 6,
+        "is_available": true
+      },
+      {
+        "id": 3,
+        "size": "S",
+        "color": null,
+        "image": "/products/v3.png",
+        "mrp": "999",
+        "price": "500",
+        "stock_qty": 6,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/img2.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/img3.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 3,
+        "media": "/products/img10.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 4,
+        "media": "/products/img4.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 5,
+        "media": "/products/img5.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 6,
+        "media": "/products/img6.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 7,
+        "media": "/products/img7.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 8,
+        "media": "/products/img8.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 9,
+        "media": "/products/img9.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 10,
+        "media": "/products/img11.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 11,
+        "media": "/products/img1.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 10,
+        "media": "/products/imgin.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 10,
+        "media": "/products/imgin2.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 10,
+        "media": "/products/video1.mp4",
+        "is_main": true
+      }
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
+  }
+]
