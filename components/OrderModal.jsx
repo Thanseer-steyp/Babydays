@@ -122,7 +122,7 @@ State: ${form.state}${form.landmark ? `\n🏛️ Landmark: ${form.landmark}` : "
 `.trim();
 
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/919746976740?text=${encoded}`, "_blank");
+    window.open(`https://wa.me/918075261678?text=${encoded}`, "_blank");
     setTimeout(() => {
       window.location.href = "/";
     }, 500);
