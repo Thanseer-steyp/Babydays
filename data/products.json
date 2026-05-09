@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "title": "Baby Washable Snug Fit Padded Shorts ( Pack of 2 )",
-    "slug": "snug-fit-padded-shorts",
+    "title": "Baby Washable Padded Langot ( Pack of 2 )",
+    "slug": "baby-padded-langot",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
-    "mrp": "999",
+    "mrp": "749",
     "price": 490,
-    "lowest_variant_mrp": "999",
+    "lowest_variant_mrp": "749",
     "lowest_variant_price": "490",
-    "main_media": "/products/img3.jpeg",
-    "delivery_charge": "49",
-    "material_type": "Cotton Fabric",
+    "main_media": "/products/p1-main.jpeg",
+    "delivery_charge": "0",
+    "material_type": "Combed Cotton Fabric",
     "description": "",
-    "features": "🌧️ Designed with Hollow Conjugate Virgin R1 fiber foam\n👶 Prevents flat head syndrome",
+    "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
     "size_guide": "/products/guide.jpeg",
     "is_available": true,
     "average_rating": 0,
@@ -21,169 +21,44 @@
     "variants": [
       {
         "id": 1,
-        "size": "L",
+        "size": "0-3 Months",
         "color": null,
-        "image": "/products/v1.png",
-        "mrp": "999",
+        "image": "/products/p1-main.jpeg",
+        "mrp": "799",
         "price": "490",
-        "stock_qty": 6,
-        "is_available": true
-      },
-      {
-        "id": 2,
-        "size": "S",
-        "color": null,
-        "image": "/products/v2.png",
-        "mrp": "999",
-        "price": "500",
-        "stock_qty": 6,
-        "is_available": true
-      },
-      {
-        "id": 3,
-        "size": "S",
-        "color": null,
-        "image": "/products/v3.png",
-        "mrp": "999",
-        "price": "500",
-        "stock_qty": 6,
+        "stock_qty": 10,
         "is_available": true
       }
     ],
     "media": [
       {
         "id": 1,
-        "media": "/products/img2.jpeg",
+        "media": "/products/p1-main.jpeg",
         "is_main": true
       },
       {
         "id": 2,
-        "media": "/products/img3.jpeg",
+        "media": "/products/p1-3.jpeg",
         "is_main": true
       },
       {
         "id": 3,
-        "media": "/products/img10.jpeg",
+        "media": "/products/p1-4.jpeg",
         "is_main": true
       },
       {
         "id": 4,
-        "media": "/products/img4.jpeg",
+        "media": "/products/p1-1.jpeg",
         "is_main": true
       },
       {
         "id": 5,
-        "media": "/products/img5.jpeg",
+        "media": "/products/p1-2.jpeg",
         "is_main": true
       },
       {
         "id": 6,
-        "media": "/products/img6.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 7,
-        "media": "/products/img7.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 8,
-        "media": "/products/img8.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 9,
-        "media": "/products/img9.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 10,
-        "media": "/products/img11.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 11,
-        "media": "/products/img1.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 12,
-        "media": "/products/imgin.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 13,
-        "media": "/products/imgin2.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 14,
-        "media": "/products/video1.mp4",
-        "is_main": true
-      }
-    ],
-    "created_at": "2026-05-01T00:00:00.000Z"
-  },
-  {
-    "id": 2,
-    "title": "Baby Bath Towel with Cute Prints ( Pack of 3 )",
-    "slug": "baby-bath-towel",
-    "age_category": "baby_unisex",
-    "product_category": "bath-towels",
-    "mrp": "799",
-    "price": 390,
-    "lowest_variant_mrp": "799",
-    "lowest_variant_price": "390",
-    "main_media": "/products/p21.jpeg",
-    "delivery_charge": "0",
-    "material_type": "Muslin",
-    "description": "",
-    "features": "🌧️ Designed with Hollow Conjugate Virgin R1 fiber foam\n👶 Prevents flat head syndrome",
-    "size_guide": "/products/guide.jpeg",
-    "is_available": true,
-    "average_rating": 0,
-    "rating_count": 0,
-    "variants": [
-      {
-        "id": 1,
-        "size": "70x70",
-        "color": null,
-        "image": "/products/p21.jpeg",
-        "mrp": "799",
-        "price": "390",
-        "stock_qty": 6,
-        "is_available": true
-      },
-      {
-        "id": 2,
-        "size": "70x70",
-        "color": null,
-        "image": "/products/p22.jpeg",
-        "mrp": "799",
-        "price": "390",
-        "stock_qty": 6,
-        "is_available": true
-      },
-      {
-        "id": 3,
-        "size": "70x70",
-        "color": null,
-        "image": "/products/p23.jpeg",
-        "mrp": "799",
-        "price": "390",
-        "stock_qty": 6,
-        "is_available": true
-      }
-    ],
-    "media": [
-      {
-        "id": 1,
-        "media": "/products/p21.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 2,
-        "media": "/products/p22.jpeg",
+        "media": "/products/p1-vid.mp4",
         "is_main": true
       }
     
