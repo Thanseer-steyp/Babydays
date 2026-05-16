@@ -4,19 +4,19 @@
     "slug": "snuggies",
     "name": "Snuggies",
     "tagline": "Hello world",
-    "bannerImage": "/products/banner1.png",
+    "bannerImage": "/products/snug-banner.jpeg",
     "bannerBg": "from-pink-100 via-rose-50 to-white",
     "accentColor": "#e91e8c",
-    "icon": "/products/img11.jpeg"
+    "icon": "/products/p2-7.jpeg"
   },
   {
     "id": 2,
     "slug": "bath-towels",
     "name": "Bath Towels",
     "tagline": "Hello world",
-    "bannerImage": "/products/b21.png",
+    "bannerImage": "/products/towel-banner.jpeg",
     "bannerBg": "from-pink-100 via-rose-50 to-white",
     "accentColor": "#e91e8c",
-    "icon": "/products/p21.jpeg"
+    "icon": "/products/towel-banner.jpeg"
   }
 ]
