@@ -2,15 +2,15 @@
   {
     "id": 1,
     "title": "Baby Washable Padded Langot ( Pack of 2 )",
-    "slug": "baby-padded-langot",
+    "slug": "baby-padded-langot-p2",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
-    "mrp": "749",
+    "mrp": 749,
     "price": 490,
-    "lowest_variant_mrp": "749",
-    "lowest_variant_price": "490",
+    "lowest_variant_mrp": 749,
+    "lowest_variant_price": 490,
     "main_media": "/products/p1-main.jpeg",
-    "delivery_charge": "0",
+    "delivery_charge": 0,
     "material_type": "Combed Cotton Fabric",
     "description": "",
     "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
@@ -24,8 +24,8 @@
         "size": "0-3 Months",
         "color": null,
         "image": "/products/p1-main.jpeg",
-        "mrp": "799",
-        "price": "490",
+        "mrp": 749,
+        "price": 490,
         "stock_qty": 10,
         "is_available": true
       }
@@ -61,7 +61,539 @@
         "media": "/products/p1-vid.mp4",
         "is_main": true
       }
-    
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
+  },
+
+  {
+    "id": 2,
+    "title": "Baby Washable Padded Langot ( Pack of 5 )",
+    "slug": "baby-padded-langot-p5",
+    "age_category": "baby_unisex",
+    "product_category": "snuggies",
+    "mrp": 1649,
+    "price": 990,
+    "lowest_variant_mrp": 1649,
+    "lowest_variant_price": 990,
+    "main_media": "/products/p2-2.jpeg",
+    "delivery_charge": "0",
+    "material_type": "Combed Cotton Fabric",
+    "description": "",
+    "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "0-3 Months",
+        "color": null,
+        "image": "/products/p2-2.jpeg",
+        "mrp": 1649,
+        "price": 990,
+        "stock_qty": 10,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/p2-1.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/p2-3.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 3,
+        "media": "/products/p2-4.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 4,
+        "media": "/products/p2-5.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 5,
+        "media": "/products/p2-6.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 6,
+        "media": "/products/p2-7.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 7,
+        "media": "/products/p1-vid.mp4",
+        "is_main": true
+      }
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Baby Washable Padded Underwear ( Pack of 2 )",
+    "slug": "baby-padded-underwear-p2",
+    "age_category": "baby_unisex",
+    "product_category": "snuggies",
+    "mrp": 749,
+    "price": 490,
+    "lowest_variant_mrp": 749,
+    "lowest_variant_price": 490,
+    "main_media": "/products/p3-2.jpeg",
+    "delivery_charge": "0",
+    "material_type": "Combed Cotton Fabric",
+    "description": "",
+    "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "6-9 Months",
+        "color": null,
+        "image": "/products/p3-1.jpeg",
+        "mrp": 749,
+        "price": 490,
+        "stock_qty": 10,
+        "is_available": true
+      },
+      {
+        "id": 2,
+        "size": "1 Year",
+        "color": null,
+        "image": "/products/p3-1.jpeg",
+        "mrp": 749,
+        "price": 490,
+        "stock_qty": 10,
+        "is_available": true
+      },
+      {
+        "id": 3,
+        "size": "2 Year",
+        "color": null,
+        "image": "/products/p3-1.jpeg",
+        "mrp": 749,
+        "price": 490,
+        "stock_qty": 10,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/p3-6.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/p3-4.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 3,
+        "media": "/products/p3-2.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 4,
+        "media": "/products/p3-7.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 5,
+        "media": "/products/p3-8.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 6,
+        "media": "/products/p3-9.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 7,
+        "media": "/products/p3-10.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 8,
+        "media": "/products/p3-vid.mp4",
+        "is_main": true
+      }
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "title": "Baby Washable Padded Underwear ( Pack of 5 )",
+    "slug": "baby-padded-underwear-p5",
+    "age_category": "baby_unisex",
+    "product_category": "snuggies",
+    "mrp": 1649,
+    "price": 990,
+    "lowest_variant_mrp": 1649,
+    "lowest_variant_price": 990,
+    "main_media": "/products/p3-3.jpeg",
+    "delivery_charge": "0",
+    "material_type": "Combed Cotton Fabric",
+    "description": "",
+    "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "6-9 Months",
+        "color": null,
+        "image": "/products/p3-1.jpeg",
+        "mrp": 1649,
+        "price": 990,
+        "stock_qty": 10,
+        "is_available": true
+      },
+      {
+        "id": 2,
+        "size": "1 Year",
+        "color": null,
+        "image": "/products/p3-1.jpeg",
+        "mrp": 1649,
+        "price": 990,
+        "stock_qty": 10,
+        "is_available": true
+      },
+      {
+        "id": 3,
+        "size": "2 Year",
+        "color": null,
+        "image": "/products/p3-1.jpeg",
+        "mrp": 1649,
+        "price": 990,
+        "stock_qty": 10,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/p3-6.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/p3-4.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 3,
+        "media": "/products/p3-2.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 4,
+        "media": "/products/p3-7.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 5,
+        "media": "/products/p3-8.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 6,
+        "media": "/products/p3-9.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 7,
+        "media": "/products/p3-10.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 8,
+        "media": "/products/p3-vid.mp4",
+        "is_main": true
+      }
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "title": "Baby Bath Towel with Cute Prints ( Pack of 3 )",
+    "slug": "baby-bath-towel-p3",
+    "age_category": "baby_unisex",
+    "product_category": "bath-towels",
+    "mrp": 749,
+    "price": 590,
+    "lowest_variant_mrp": 749,
+    "lowest_variant_price": 590,
+    "main_media": "/products/p4-main.jpeg",
+    "delivery_charge": "0",
+    "material_type": "Muslin",
+    "description": "",
+    "features": "Vibrant\nCute Prints\nPremium Material\nSoft  & gentle",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "70cm * 70cm",
+        "color": null,
+        "image": "/products/p4-1.jpeg",
+        "mrp": 749,
+        "price": 590,
+        "stock_qty": 10,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/p4-2.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/p4-3.jpeg",
+        "is_main": true
+      }
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "title": "Baby Washable Snug Fit Padded Shorts ( Pack of 2 )",
+    "slug": "baby-snug-shorts-p2",
+    "age_category": "baby_unisex",
+    "product_category": "snuggies",
+    "mrp": 749,
+    "price": 490,
+    "lowest_variant_mrp": 749,
+    "lowest_variant_price": 490,
+    "main_media": "/products/p5-main.jpeg",
+    "delivery_charge": "0",
+    "material_type": "Combed Cotton Fabric",
+    "description": "",
+    "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "6-9 Months",
+        "color": null,
+        "image": "/products/p5-main.jpeg",
+        "mrp": 749,
+        "price": 490,
+        "stock_qty": 10,
+        "is_available": true
+      },
+      {
+        "id": 2,
+        "size": "1 Year",
+        "color": null,
+        "image": "/products/p5-main.jpeg",
+        "mrp": 749,
+        "price": 490,
+        "stock_qty": 10,
+        "is_available": true
+      },
+      {
+        "id": 3,
+        "size": "2 Year",
+        "color": null,
+        "image": "/products/p5-main.jpeg",
+        "mrp": 749,
+        "price": 490,
+        "stock_qty": 10,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/p5-1.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/p5-2.jpeg",
+        "is_main": true
+      },
+
+      {
+        "id": 3,
+        "media": "/products/p5-vid.mp4",
+        "is_main": true
+      }
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "title": "Baby Washable Snug Fit Padded Shorts ( Pack of 5 )",
+    "slug": "baby-snug-shorts-p5",
+    "age_category": "baby_unisex",
+    "product_category": "snuggies",
+    "mrp": 1649,
+    "price": 990,
+    "lowest_variant_mrp": 1649,
+    "lowest_variant_price": 990,
+    "main_media": "/products/p6-main.jpeg",
+    "delivery_charge": "0",
+    "material_type": "Combed Cotton Fabric",
+    "description": "",
+    "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "6-9 Months",
+        "color": null,
+        "image": "/products/p6-main.jpeg",
+        "mrp": 1649,
+        "price": 990,
+        "stock_qty": 10,
+        "is_available": true
+      },
+      {
+        "id": 2,
+        "size": "1 Year",
+        "color": null,
+        "image": "/products/p6-main.jpeg",
+        "mrp": 1649,
+        "price": 990,
+        "stock_qty": 10,
+        "is_available": true
+      },
+      {
+        "id": 3,
+        "size": "2 Year",
+        "color": null,
+        "image": "/products/p6-main.jpeg",
+        "mrp": 1649,
+        "price": 990,
+        "stock_qty": 10,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/p6-3.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/p6-2.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 3,
+        "media": "/products/p6-1.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 4,
+        "media": "/products/p6-4.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 5,
+        "media": "/products/p5-vid.mp4",
+        "is_main": true
+      }
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
+  },
+  {
+    "id": 8,
+    "title": "Baby Washable Snug Fit Padded Shorts ( Pack of 2 )",
+    "slug": "baby-snug-shorts-p2",
+    "age_category": "baby_unisex",
+    "product_category": "snuggies",
+    "mrp": 749,
+    "price": 490,
+    "lowest_variant_mrp": 749,
+    "lowest_variant_price": 490,
+    "main_media": "/products/p7-main.jpeg",
+    "delivery_charge": "0",
+    "material_type": "Combed Cotton Fabric",
+    "description": "",
+    "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "6-9 Months",
+        "color": null,
+        "image": "/products/p7-main.jpeg",
+        "mrp": 749,
+        "price": 490,
+        "stock_qty": 10,
+        "is_available": true
+      },
+      {
+        "id": 2,
+        "size": "1 Year",
+        "color": null,
+        "image": "/products/p7-main.jpeg",
+        "mrp": 749,
+        "price": 490,
+        "stock_qty": 10,
+        "is_available": true
+      },
+      {
+        "id": 3,
+        "size": "2 Year",
+        "color": null,
+        "image": "/products/p7-main.jpeg",
+        "mrp": 749,
+        "price": 490,
+        "stock_qty": 10,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/p7-2.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/p7-3.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 3,
+        "media": "/products/p7-4.jpeg",
+        "is_main": true
+      },
+
+      {
+        "id": 3,
+        "media": "/products/p7-vid.mp4",
+        "is_main": true
+      }
     ],
     "created_at": "2026-05-01T00:00:00.000Z"
   }
