@@ -11,12 +11,22 @@
   },
   {
     "id": 2,
-    "slug": "bath-towels",
-    "name": "Bath Towels",
+    "slug": "towels",
+    "name": "Towels",
     "tagline": "Hello world",
     "bannerImage": "/products/towel-banner.jpeg",
     "bannerBg": "from-pink-100 via-rose-50 to-white",
     "accentColor": "#e91e8c",
-    "icon": "/products/towel-banner.jpeg"
+    "icon": "/products/towel-banner-ico.png"
+  },
+  {
+    "id": 3,
+    "slug": "bibs",
+    "name": "Baby Bibs",
+    "tagline": "Hello world",
+    "bannerImage": "/products/bib-banner.jpeg",
+    "bannerBg": "from-pink-100 via-rose-50 to-white",
+    "accentColor": "#e91e8c",
+    "icon": "/products/p10-5.jpeg"
   }
 ]

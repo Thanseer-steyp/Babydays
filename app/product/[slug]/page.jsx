@@ -63,7 +63,7 @@ useEffect(() => {
           <Link href="/" className="hover:text-teal-600 transition-colors">
             Home
           </Link>
-          <span>/</span>
+          <span>-&gt;</span>
           {product.product_category && (
             <>
               <Link
@@ -72,7 +72,7 @@ useEffect(() => {
               >
                 {product.product_category}
               </Link>
-              <span>/</span>
+              <span>-&gt;</span>
             </>
           )}
           <span className="text-gray-700 font-semibold line-clamp-1">

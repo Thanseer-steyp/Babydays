@@ -124,11 +124,6 @@
       },
       {
         "id": 6,
-        "media": "/products/p2-7.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 7,
         "media": "/products/p1-vid.mp4",
         "is_main": true
       }
@@ -159,7 +154,7 @@
         "id": 1,
         "size": "6-9 Months",
         "color": null,
-        "image": "/products/p3-1.jpeg",
+        "image": "/products/p3-2.jpeg",
         "mrp": 749,
         "price": 490,
         "stock_qty": 10,
@@ -169,7 +164,7 @@
         "id": 2,
         "size": "1 Year",
         "color": null,
-        "image": "/products/p3-1.jpeg",
+        "image": "/products/p3-2.jpeg",
         "mrp": 749,
         "price": 490,
         "stock_qty": 10,
@@ -179,7 +174,7 @@
         "id": 3,
         "size": "2 Year",
         "color": null,
-        "image": "/products/p3-1.jpeg",
+        "image": "/products/p3-2.jpeg",
         "mrp": 749,
         "price": 490,
         "stock_qty": 10,
@@ -199,7 +194,7 @@
       },
       {
         "id": 3,
-        "media": "/products/p3-2.jpeg",
+        "media": "/products/p3-1.jpeg",
         "is_main": true
       },
       {
@@ -254,7 +249,7 @@
         "id": 1,
         "size": "6-9 Months",
         "color": null,
-        "image": "/products/p3-1.jpeg",
+        "image": "/products/p3-3.jpeg",
         "mrp": 1649,
         "price": 990,
         "stock_qty": 10,
@@ -264,7 +259,7 @@
         "id": 2,
         "size": "1 Year",
         "color": null,
-        "image": "/products/p3-1.jpeg",
+        "image": "/products/p3-3.jpeg",
         "mrp": 1649,
         "price": 990,
         "stock_qty": 10,
@@ -274,7 +269,7 @@
         "id": 3,
         "size": "2 Year",
         "color": null,
-        "image": "/products/p3-1.jpeg",
+        "image": "/products/p3-3.jpeg",
         "mrp": 1649,
         "price": 990,
         "stock_qty": 10,
@@ -330,7 +325,7 @@
     "title": "Baby Bath Towel with Cute Prints ( Pack of 3 )",
     "slug": "baby-bath-towel-p3",
     "age_category": "baby_unisex",
-    "product_category": "bath-towels",
+    "product_category": "towels",
     "mrp": 749,
     "price": 590,
     "lowest_variant_mrp": 749,
@@ -349,7 +344,7 @@
         "id": 1,
         "size": "70cm * 70cm",
         "color": null,
-        "image": "/products/p4-1.jpeg",
+        "image": "/products/p4-main.jpeg",
         "mrp": 749,
         "price": 590,
         "stock_qty": 10,
@@ -365,6 +360,11 @@
       {
         "id": 2,
         "media": "/products/p4-3.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 3,
+        "media": "/products/p4-1.jpeg",
         "is_main": true
       }
     ],
@@ -432,9 +432,13 @@
         "media": "/products/p5-2.jpeg",
         "is_main": true
       },
-
       {
         "id": 3,
+        "media": "/products/p2-7.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 4,
         "media": "/products/p5-vid.mp4",
         "is_main": true
       }
@@ -515,6 +519,11 @@
       },
       {
         "id": 5,
+        "media": "/products/p2-7.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 6,
         "media": "/products/p5-vid.mp4",
         "is_main": true
       }
@@ -592,6 +601,116 @@
       {
         "id": 3,
         "media": "/products/p7-vid.mp4",
+        "is_main": true
+      }
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "title": "Baby Hooded Towel with Cute Prints",
+    "slug": "baby-hooded-towel",
+    "age_category": "baby_unisex",
+    "product_category": "towels",
+    "mrp": 690,
+    "price": 490,
+    "lowest_variant_mrp": 690,
+    "lowest_variant_price": 490,
+    "main_media": "/products/p8-3.jpeg",
+    "delivery_charge": "0",
+    "material_type": "Interlock",
+    "description": "",
+    "features": "Vibrant\nCute Prints\nPremium Material\nSoft  & gentle",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "90cm * 90cm",
+        "color": null,
+        "image": "/products/p8-3.jpeg",
+        "mrp": 690,
+        "price": 490,
+        "stock_qty": 10,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/p8-main.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/p8-1.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 3,
+        "media": "/products/p8-2.jpeg",
+        "is_main": true
+      }
+    ],
+    "created_at": "2026-05-01T00:00:00.000Z"
+  },
+  {
+    "id": 11,
+    "title": "Baby Washable Bibs ( Pack of 5 )",
+    "slug": "baby-bibs-p5",
+    "age_category": "baby_unisex",
+    "product_category": "bibs",
+    "mrp": 450,
+    "price": 290,
+    "lowest_variant_mrp": 450,
+    "lowest_variant_price": 290,
+    "main_media": "/products/p10-main.jpeg",
+    "delivery_charge": 0,
+    "material_type": "Cotton Fabric",
+    "description": "",
+    "features": "Soft & baby-friendly fabric\nAbsorbent and easy to clean\nCute colorful prints and designs\nComfortable fit with secure neck opening",
+    "size_guide": "/products/guide.jpeg",
+    "is_available": true,
+    "average_rating": 0,
+    "rating_count": 0,
+    "variants": [
+      {
+        "id": 1,
+        "size": "0-3 Months",
+        "color": null,
+        "image": "/products/p10-main.jpeg",
+        "mrp": 450,
+        "price": 290,
+        "stock_qty": 10,
+        "is_available": true
+      }
+    ],
+    "media": [
+      {
+        "id": 1,
+        "media": "/products/p10-1.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 2,
+        "media": "/products/p10-2.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 3,
+        "media": "/products/p10-3.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 4,
+        "media": "/products/p10-4.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 5,
+        "media": "/products/p10-5.jpeg",
         "is_main": true
       }
     ],

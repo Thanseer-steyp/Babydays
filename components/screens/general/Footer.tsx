@@ -47,7 +47,7 @@ const BabydayFooter: React.FC = () => {
                 </svg>
                 <span>
                   <strong className="text-gray-800">Call Us :</strong> +91
-                  9746976740
+                  8075261678
                 </span>
               </div>
 

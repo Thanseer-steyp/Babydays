@@ -2,7 +2,7 @@
   "banners": [
     {
       "id": 1,
-      "image": "/images/babybanner.png",
+      "image": "/images/banner1.png",
       "textPosition": "left",
       "showContent": true,
       "badge": "New Arrival",
@@ -15,8 +15,8 @@
     },
     {
       "id": 2,
-      "image": "/images/deliverybanner1.png",
-      "textPosition": "right",
+      "image": "/images/banner2.png",
+      "textPosition": "left",
       "showContent": true,
       "badge": "Hot Deals",
       "headline": "the best gifts",
@@ -28,13 +28,13 @@
     },
     {
       "id": 3,
-      "image": "/images/babybanner1.png",
+      "image": "/images/banners.png",
       "textPosition": "left",
       "showContent": true,
       "badge": "Free Shipping",
-      "headline": "comfort &",
-      "headlineBold": "care for",
-      "headlineSuffix": "your baby!",
+      "headline": "all India",
+      "headlineBold": "free",
+      "headlineSuffix": "Delivery!",
       "cta": "Browse All",
       "ctaLink": "/products",
       "bgGradient": "from-emerald-300 via-teal-400 to-cyan-500"
