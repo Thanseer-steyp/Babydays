@@ -2,7 +2,7 @@
   "banners": [
     {
       "id": 1,
-      "image": "/images/banner1.png",
+      "image": "/images/banners/banner1.png",
       "textPosition": "left",
       "showContent": true,
       "badge": "New Arrival",
@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "image": "/images/banner2.png",
+      "image": "/images/banners/banner2.png",
       "textPosition": "left",
       "showContent": true,
       "badge": "Hot Deals",
@@ -28,7 +28,7 @@
     },
     {
       "id": 3,
-      "image": "/images/banners.png",
+      "image": "/images/banners/banner3.png",
       "textPosition": "left",
       "showContent": true,
       "badge": "Free Shipping",
