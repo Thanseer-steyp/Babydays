@@ -575,13 +575,25 @@ export default function ProductDetailClient({ product }) {
           )}
 
           {/* Actions */}
-          <div className="flex items-center gap-3 flex-wrap">
+          {/* Actions - Desktop */}
+          <div className="hidden md:flex items-center gap-3 flex-wrap">
             <button
               onClick={handleBuyNow}
               disabled={!isAvailable}
               className="flex-1 min-w-[120px] bg-amber-400 hover:bg-amber-500 text-white text-sm font-black py-3 px-6 rounded-xl transition-all disabled:opacity-40 disabled:cursor-not-allowed"
             >
               Buy Now
+            </button>
+          </div>
+
+          {/* Mobile Fixed Bottom Buy Button */}
+          <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 p-3 shadow-[0_-4px_10px_rgba(0,0,0,0.06)]">
+            <button
+              onClick={handleBuyNow}
+              disabled={!isAvailable}
+              className="w-full bg-amber-400 hover:bg-amber-500 text-white text-sm font-black py-4 rounded-xl transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+            >
+              {isAvailable ? "Buy Now" : "Out of Stock"}
             </button>
           </div>
 
