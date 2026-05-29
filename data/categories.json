@@ -28,5 +28,15 @@
     "bannerBg": "from-pink-100 via-rose-50 to-white",
     "accentColor": "#e91e8c",
     "icon": "/products/p10-5.jpeg"
+  },
+  {
+    "id": 3,
+    "slug": "sleeping-bag",
+    "name": "Baby Sleeping Bags",
+    "tagline": "Hello world",
+    "bannerImage": "/products/p11-banner.jpeg",
+    "bannerBg": "from-pink-100 via-rose-50 to-white",
+    "accentColor": "#e91e8c",
+    "icon": "/products/p11-5.jpeg"
   }
 ]

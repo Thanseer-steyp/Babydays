@@ -462,13 +462,13 @@ export default function Header() {
         {/* ── Mobile drawer ── */}
         {/* ── Mobile drawer ── */}
         <div
-          className={`sm:hidden absolute top-full left-0 w-full bg-white z-40 overflow-hidden transition-all duration-200 ease-in-out transform shadow-lg ${
+          className={`sm:hidden absolute top-full left-0 w-full bg-gray-50 z-40 overflow-hidden transition-all duration-200 ease-in-out transform shadow-lg ${
             mobileOpen
               ? "max-h-[1000px] opacity-100 translate-y-0"
               : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"
           }`}
         >
-          <div className="bg-white">
+          <div className="bg-gray-100 border-b border-gray-300  rounded-b-xl shadow-2xl">
             <div className="px-4 pt-4 pb-2 relative" ref={searchDropdownRef}>
               <div className="flex items-center border-2 border-teal-400 rounded-lg overflow-hidden bg-white">
                 <input
@@ -492,13 +492,13 @@ export default function Header() {
               {searchDropdownUI}
             </div>
 
-            <div className="px-4 pb-4 flex flex-col gap-1">
+            <div className="px-4 pb-4 grid grid-cols-3 gap-3">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`flex items-center gap-2 px-3 py-2.5 text-sm font-bold rounded-lg transition-colors ${
+                  className={`flex items-center gap-2 bg-gray-50 px-3 py-2.5 text-sm font-bold rounded-lg transition-colors ${
                     link.hot
                       ? "text-red-500 hover:bg-red-50"
                       : "text-gray-700 hover:text-teal-600 hover:bg-teal-50"
@@ -509,32 +509,30 @@ export default function Header() {
                 </Link>
               ))}
 
-              <div className="border-t border-gray-100 my-2" />
-              <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider px-3 mb-1">
-                Categories
-              </p>
-              <div className="grid grid-cols-3 gap-3">
-                {apiCategories.map((cat) => (
-                  <Link
-                    key={cat.id}
-                    href={`/category/${cat.slug}`}
-                    onClick={() => setMobileOpen(false)}
-                    className="text-center px-3 py-2 text-xs font-semibold text-gray-600 bg-gray-50 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-colors"
-                  >
-                    {cat.icon && (
-                      <img
-                        src={cat.icon}
-                        alt={cat.name}
-                        className="w-10 h-10 rounded-full object-cover mx-auto"
-                      />
-                    )}
-                    {cat.name}
-                  </Link>
-                ))}
+              <div className="col-span-3">
+                {/* <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider px-3 mb-1">
+                  Categories
+                </p> */}
+                <div className="grid grid-cols-3 gap-3">
+                  {apiCategories.map((cat) => (
+                    <Link
+                      key={cat.id}
+                      href={`/category/${cat.slug}`}
+                      onClick={() => setMobileOpen(false)}
+                      className="text-center px-3 py-2 text-xs font-semibold text-gray-600 bg-gray-50 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-colors "
+                    >
+                      {cat.icon && (
+                        <img
+                          src={cat.icon}
+                          alt={cat.name}
+                          className="w-10 h-10 rounded-full object-cover mx-auto"
+                        />
+                      )}
+                      {cat.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
-
-              <div className="border-t border-gray-100 my-2" />
-              <div className="flex gap-4 px-1"></div>
             </div>
           </div>
         </div>

@@ -292,6 +292,24 @@ export default function ProductDetailClient({ product }) {
   const price = selectedItem?.price ?? detailedProduct.price ?? 0;
   const mrp = selectedItem?.mrp ?? detailedProduct.mrp ?? price;
 
+  const today = new Date();
+
+const startDate = new Date(today);
+startDate.setDate(today.getDate() + 5);
+
+const endDate = new Date(today);
+endDate.setDate(today.getDate() + 7);
+
+const deliveryStart = startDate.toLocaleDateString("en-IN", {
+  day: "numeric",
+  month: "short",
+});
+
+const deliveryEnd = endDate.toLocaleDateString("en-IN", {
+  day: "numeric",
+  month: "short",
+});
+
   const discount = mrp > price ? Math.round(((mrp - price) / mrp) * 100) : null;
   const isAvailable =
     detailedProduct.is_available &&
@@ -493,6 +511,9 @@ export default function ProductDetailClient({ product }) {
               ✓ Free Delivery
             </p>
           )}
+          <p className="text-xs font-bold text-blue-700 bg-blue-50 px-3 py-2 rounded-lg w-fit">
+  Estimated Delivery: {deliveryStart} - {deliveryEnd}
+</p>
 
           <div className="w-full h-px bg-gray-100" />
           <p className="text-sm text-gray-500">

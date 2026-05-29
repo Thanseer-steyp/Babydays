@@ -7,6 +7,21 @@ import Link from "next/link";
 import ProductDetailClient from "@/components/ProductDetailClient";
 import productData from "@/data/products.json";
 
+const ChevronRight = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <polyline points="9 18 15 12 9 6" />
+  </svg>
+);
+
 export default function ProductDetailPage() {
 
   const { slug } = useParams(); // ✅ FIXED
@@ -63,7 +78,7 @@ useEffect(() => {
           <Link href="/" className="hover:text-teal-600 transition-colors">
             Home
           </Link>
-          <span>-&gt;</span>
+          <ChevronRight/>
           {product.product_category && (
             <>
               <Link
@@ -72,7 +87,7 @@ useEffect(() => {
               >
                 {product.product_category}
               </Link>
-              <span>-&gt;</span>
+              <ChevronRight/>
             </>
           )}
           <span className="text-gray-700 font-semibold line-clamp-1">

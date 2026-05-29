@@ -28,7 +28,7 @@ function CategorySection({ category, products }) {
   return (
     <section className="flex flex-col gap-6">
       {/* Banner */}
-      <div className="relative w-full h-[180px] sm:h-[220px] md:h-[280px] lg:h-[340px] rounded-2xl overflow-hidden shadow-md">
+      <div className="relative w-full h-[180px] sm:h-[220px] md:h-[320px] lg:h-[420px] rounded-2xl overflow-hidden shadow-md">
   {category.image ? (
     <img
       src={displayCategory}
