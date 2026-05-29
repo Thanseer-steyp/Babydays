@@ -22,7 +22,7 @@
   {
     "id": 3,
     "slug": "bibs",
-    "name": "Baby Bibs",
+    "name": "Bibs",
     "tagline": "Hello world",
     "bannerImage": "/products/bib-banner.jpeg",
     "bannerBg": "from-pink-100 via-rose-50 to-white",
@@ -31,8 +31,8 @@
   },
   {
     "id": 3,
-    "slug": "sleeping-bag",
-    "name": "Baby Sleeping Bags",
+    "slug": "sleeping-bags",
+    "name": "Sleeping Bags",
     "tagline": "Hello world",
     "bannerImage": "/products/p11-banner.jpeg",
     "bannerBg": "from-pink-100 via-rose-50 to-white",
