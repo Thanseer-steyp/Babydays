@@ -174,6 +174,32 @@ export default function ProductDetailClient({ product }) {
   const [isMuted, setIsMuted] = useState(true);
   const [showModal, setShowModal] = useState(false);
 
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.changedTouches[0].screenX;
+  };
+
+  const handleTouchEnd = (e) => {
+    touchEndX.current = e.changedTouches[0].screenX;
+    handleSwipe();
+  };
+
+  const handleSwipe = () => {
+    const diff = touchStartX.current - touchEndX.current;
+
+    // swipe left
+    if (diff > 50) {
+      setActiveImg((i) => (i + 1) % mediaList.length);
+    }
+
+    // swipe right
+    if (diff < -50) {
+      setActiveImg((i) => (i - 1 + mediaList.length) % mediaList.length);
+    }
+  };
+
   const detailedProduct = {
     ...product,
     variants:
@@ -303,7 +329,10 @@ export default function ProductDetailClient({ product }) {
         .thumb { transition: border-color 0.15s, opacity 0.15s; }
         .thumb:hover { border-color: #14b8a6; opacity: 1; }
         @keyframes fadeIn { from { opacity:0; transform:scale(0.98); } to { opacity:1; transform:scale(1); } }
-        .img-fade { animation: fadeIn 0.25s ease forwards; }
+        .img-fade {
+  animation: fadeIn 0.25s ease forwards;
+  touch-action: pan-y;
+}
       `}</style>
 
       <div
@@ -316,6 +345,8 @@ export default function ProductDetailClient({ product }) {
           <div
             className="relative bg-gray-50 rounded-2xl overflow-hidden border border-gray-100"
             style={{ aspectRatio: "1/1" }}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
             {mediaList.length > 0 ? (
               isVideo(currentMedia) ? (
@@ -359,7 +390,7 @@ export default function ProductDetailClient({ product }) {
                       (i) => (i - 1 + mediaList.length) % mediaList.length,
                     )
                   }
-                  className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/80 backdrop-blur flex items-center justify-center shadow hover:bg-white hover:scale-110 transition-all"
+                  className="hidden absolute left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/80 backdrop-blur md:flex items-center justify-center shadow hover:bg-white hover:scale-110 transition-all"
                 >
                   <ChevronLeft />
                 </button>
@@ -367,7 +398,7 @@ export default function ProductDetailClient({ product }) {
                   onClick={() =>
                     setActiveImg((i) => (i + 1) % mediaList.length)
                   }
-                  className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/80 backdrop-blur flex items-center justify-center shadow hover:bg-white hover:scale-110 transition-all"
+                  className="hidden absolute right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/80 backdrop-blur md:flex items-center justify-center shadow hover:bg-white hover:scale-110 transition-all"
                 >
                   <ChevronRight />
                 </button>

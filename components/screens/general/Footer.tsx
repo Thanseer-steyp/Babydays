@@ -9,7 +9,7 @@ const BabydayFooter: React.FC = () => {
           {/* Brand & Contact */}
           <div className="col-span-2 sm:col-span-1 flex flex-col gap-4">
             {/* Logo */}
-            <div className="flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-2">
               <img
                 src="/icons/logo.png"
                 alt="Babyday Logo"
@@ -18,7 +18,7 @@ const BabydayFooter: React.FC = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="flex flex-col gap-3 mt-2">
+            <div className="flex flex-col gap-3 mt-2  items-center">
               <div className="flex items-start gap-2 text-sm text-gray-600">
                 <svg
                   className="w-4 h-4 mt-0.5 text-teal-500 flex-shrink-0"
@@ -32,8 +32,8 @@ const BabydayFooter: React.FC = () => {
                   />
                 </svg>
                 <span>
-                  <strong className="text-gray-800">Address:</strong>{" "}
-                  Trivandrum, Kerala
+                  <strong className="text-gray-800 hidden md:block">Address:</strong>{" "}
+                  Nedumangad, Kerala
                 </span>
               </div>
 
@@ -46,7 +46,7 @@ const BabydayFooter: React.FC = () => {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <span>
-                  <strong className="text-gray-800">Call Us :</strong> +91
+                  <strong className="text-gray-800 hidden md:block">Call Us :</strong> +91
                   8075261678
                 </span>
               </div>
@@ -66,7 +66,7 @@ const BabydayFooter: React.FC = () => {
                   />
                 </svg>
                 <span>
-                  <strong className="text-gray-800">Email :</strong>{" "}
+                  <strong className="text-gray-800 hidden md:block">Email :</strong>{" "}
                   connect.babydays@gmail.com
                 </span>
               </div>
@@ -74,7 +74,7 @@ const BabydayFooter: React.FC = () => {
           </div>
 
           {/* Company Links */}
-          <div>
+          <div className="hidden md:block">
             <h3 className="text-base font-semibold text-gray-800 mb-4">
               Company
             </h3>
@@ -95,7 +95,7 @@ const BabydayFooter: React.FC = () => {
           </div>
 
           {/* Account Links */}
-          <div>
+          <div className="hidden md:block">
             <h3 className="text-base font-semibold text-gray-800 mb-4">
               Account
             </h3>
@@ -121,7 +121,7 @@ const BabydayFooter: React.FC = () => {
       <div className="border-t border-gray-200" />
 
       {/* Bottom Bar */}
-      <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
+      <div className="pb-24 pt-4 max-w-7xl mx-auto px-6 md:py-4 flex flex-col md:flex-row items-center justify-between gap-3">
         {/* Left: copyright */}
         <div className="text-xs text-gray-400 text-center md:text-left">
           <p>

@@ -322,7 +322,7 @@ export default function HeroSection() {
       {hasCTA && (
         <a
           href={banner.ctaLink!}
-          className="inline-flex items-center gap-2 bg-transparent backdrop-blur-xs  border border-white md:bg-white text-white font-black text-xs sm:text-sm px-4 sm:px-6 py-2 sm:py-3 rounded-full w-fit shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 fade-up"
+          className="inline-flex items-center gap-2 bg-transparent backdrop-blur-xs  border border-white md:bg-white text-white md:text-teal-600 font-black text-xs sm:text-sm px-4 sm:px-6 py-2 sm:py-3 rounded-full w-fit shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 fade-up"
           style={{ animationDelay: hasCoupon ? "0.3s" : "0.18s" }}
         >
           {banner.cta}

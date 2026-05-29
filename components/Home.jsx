@@ -28,41 +28,42 @@ function CategorySection({ category, products }) {
   return (
     <section className="flex flex-col gap-6">
       {/* Banner */}
-      <div
-        className="relative w-full rounded-2xl overflow-hidden shadow-md"
-        style={{ height: "200px" }}
-      >
-        {category.image ? (
-          <img
-            src={displayCategory}
-            alt={category.name}
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          />
-        ) : (
-          <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-teal-600" />
-        )}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)",
-          }}
-        />
-        <div className="absolute inset-0 flex flex-col justify-center pl-8 md:pl-12">
-          <span className="text-xs font-bold tracking-widest uppercase mb-2 px-2 py-0.5 rounded w-fit text-white bg-teal-500/80">
-            Collection
-          </span>
-          <h2 className="text-white text-3xl md:text-4xl font-black drop-shadow-lg leading-tight">
-            {category.name}
-          </h2>
-        </div>
-        <Link
-          href={`/category/${category.slug}`}
-          className="absolute right-5 top-1/2 -translate-y-1/2 text-sm font-bold px-5 py-2.5 rounded-full text-white shadow-lg border border-white/30 bg-teal-500 hover:bg-teal-600 transition-colors backdrop-blur-sm"
-        >
-          View All
-        </Link>
-      </div>
+      <div className="relative w-full h-[180px] sm:h-[220px] md:h-[280px] lg:h-[340px] rounded-2xl overflow-hidden shadow-md">
+  {category.image ? (
+    <img
+      src={displayCategory}
+      alt={category.name}
+      className="absolute inset-0 w-full h-full  bg-gray-100"
+    />
+  ) : (
+    <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-teal-600" />
+  )}
+
+  <div
+    className="absolute inset-0"
+    style={{
+      background:
+        "linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)",
+    }}
+  />
+
+  <div className="absolute inset-0 flex flex-col justify-center pl-4 sm:pl-8 md:pl-12">
+    <span className="text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-2 px-2 py-0.5 rounded w-fit text-white bg-teal-500/80">
+      Collection
+    </span>
+
+    <h2 className="text-white text-xl sm:text-3xl md:text-4xl font-black drop-shadow-lg leading-tight">
+      {category.name}
+    </h2>
+  </div>
+
+  <Link
+    href={`/category/${category.slug}`}
+    className="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 text-xs sm:text-sm font-bold px-3 sm:px-5 py-2 sm:py-2.5 rounded-full text-white shadow-lg border border-white/30 bg-teal-500 hover:bg-teal-600 transition-colors backdrop-blur-sm"
+  >
+    View All
+  </Link>
+</div>
 
       {/* Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
