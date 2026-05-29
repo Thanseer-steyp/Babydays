@@ -33,8 +33,8 @@
       "showContent": true,
       "badge": "Free Shipping",
       "headline": "all India",
-      "headlineBold": "free",
-      "headlineSuffix": "Delivery!",
+      "headlineBold": "delivery",
+      "headlineSuffix": "for free!",
       "cta": "Browse All",
       "ctaLink": "/products",
       "bgGradient": "from-emerald-300 via-teal-400 to-cyan-500"

@@ -134,11 +134,19 @@ const BabydayFooter: React.FC = () => {
         </div>
 
         {/* Center: Coupon Banner */}
-        <div className="flex items-center gap-1.5 text-xs text-gray-500 bg-orange-50 border border-orange-100 rounded-full px-4 py-1.5">
+
+        {/* <div className="flex items-center gap-1.5 text-xs text-gray-500 bg-orange-50 border border-orange-100 rounded-full px-4 py-1.5">
           <span>
             Apply coupon <strong className="text-orange-500">FIRST5</strong> to
             get <strong className="text-orange-500">5% OFF</strong> on your
             first purchase!
+          </span>
+        </div> */}
+
+        <div className="flex items-center gap-1.5 text-xs text-gray-500 bg-orange-50 border border-orange-100 rounded-full px-4 py-1.5">
+          <span>
+            Get your order within{" "}
+            <strong className="text-orange-500">5–7 days</strong> 🚚
           </span>
         </div>
 

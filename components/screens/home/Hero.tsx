@@ -34,12 +34,30 @@ interface Category {
 
 // ── Icons ──────────────────────────────────────────────────────────────────
 const ChevronLeft = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <polyline points="15 18 9 12 15 6" />
   </svg>
 );
 const ChevronRight = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <polyline points="9 18 15 12 9 6" />
   </svg>
 );
@@ -48,14 +66,11 @@ const ChevronRight = () => (
 export default function HeroSection() {
   const banners = heroData.banners as Banner[];
   const categories: Category[] = categoryData.map((cat) => ({
-  id: cat.id,
-  slug: cat.slug,
-  name: cat.name,
-  image: cat.icon, // ✅ use icon for circle UI
-}));
-
-
-
+    id: cat.id,
+    slug: cat.slug,
+    name: cat.name,
+    image: cat.icon, // ✅ use icon for circle UI
+  }));
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -64,27 +79,27 @@ export default function HeroSection() {
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const catScrollRef = useRef<HTMLDivElement>(null);
 
-const goTo = useCallback(
-  (dir: "left" | "right", targetIndex?: number) => {
-    if (isAnimating) return;
+  const goTo = useCallback(
+    (dir: "left" | "right", targetIndex?: number) => {
+      if (isAnimating) return;
 
-    setDirection(dir);
-    setIsAnimating(true);
+      setDirection(dir);
+      setIsAnimating(true);
 
-    // 👉 change slide instantly
-    setCurrentSlide((prev) => {
-      if (targetIndex !== undefined) return targetIndex;
-      if (dir === "right") return (prev + 1) % banners.length;
-      return (prev - 1 + banners.length) % banners.length;
-    });
+      // 👉 change slide instantly
+      setCurrentSlide((prev) => {
+        if (targetIndex !== undefined) return targetIndex;
+        if (dir === "right") return (prev + 1) % banners.length;
+        return (prev - 1 + banners.length) % banners.length;
+      });
 
-    // 👉 only control animation timing
-    setTimeout(() => {
-      setIsAnimating(false);
-    }, 380);
-  },
-  [isAnimating, banners.length]
-);
+      // 👉 only control animation timing
+      setTimeout(() => {
+        setIsAnimating(false);
+      }, 380);
+    },
+    [isAnimating, banners.length],
+  );
 
   const resetTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
@@ -111,7 +126,8 @@ const goTo = useCallback(
   };
 
   const banner = banners[currentSlide];
-  const hasText = banner.headline || banner.headlineBold || banner.headlineSuffix;
+  const hasText =
+    banner.headline || banner.headlineBold || banner.headlineSuffix;
   const hasCoupon = banner.couponCode && banner.discountText;
   const hasCTA = banner.cta && banner.ctaLink;
 
@@ -167,177 +183,198 @@ const goTo = useCallback(
       `}</style>
 
       <section className="hero-section w-full bg-white px-4 md:px-6 py-4 mx-auto">
-
         <div
-          className="relative w-full rounded-2xl overflow-hidden select-none"
-          style={{ height: "420px" }}
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
+  className="relative w-full rounded-2xl overflow-hidden select-none h-[220px] sm:h-[320px] md:h-[420px]"
+  onMouseEnter={() => setHovered(true)}
+  onMouseLeave={() => setHovered(false)}
+>
+  {/* BG Image */}
+  <div
+    key={`bg-${currentSlide}`}
+    className={`absolute inset-0 ${
+      isAnimating
+        ? direction === "right"
+          ? "slide-right"
+          : "slide-left"
+        : ""
+    }`}
+  >
+    <Image
+      src={banner.image}
+      alt={banner.headlineBold ?? `Banner ${banner.id}`}
+      fill
+      sizes="100vw"
+      className="object-cover object-center"
+      priority
+    />
+
+    <div
+      className="absolute inset-0 banner-overlay"
+      style={{
+        opacity: contentVisible ? 1 : 0,
+        background:
+          banner.textPosition === "left"
+            ? "linear-gradient(to right, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.22) 60%, transparent 100%)"
+            : "linear-gradient(to left, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.22) 60%, transparent 100%)",
+      }}
+    />
+  </div>
+
+  {/* Content */}
+  <div
+    key={`content-${currentSlide}`}
+    className={`absolute inset-0 flex items-center content-panel ${
+      contentVisible ? "visible-content" : "hidden-content"
+    } ${
+      banner.textPosition === "left"
+        ? "justify-start pl-4 sm:pl-8 md:pl-16"
+        : "justify-end pr-4 sm:pr-8 md:pr-16"
+    }`}
+  >
+    <div className="flex flex-col max-w-[220px] sm:max-w-xs md:max-w-sm">
+
+      {/* Badge */}
+      {banner.badge && (
+        <span
+          className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 rounded-full w-fit mb-2 sm:mb-3 fade-up"
+          style={{ animationDelay: "0s" }}
         >
-          {/* BG Image */}
-          <div
-            key={`bg-${currentSlide}`}
-            className={`absolute inset-0 ${isAnimating ? (direction === "right" ? "slide-right" : "slide-left") : ""}`}
-          >
-            <Image
-              src={banner.image}
-              alt={banner.headlineBold ?? `Banner ${banner.id}`}
-              fill
-              sizes="(max-width: 768px) 100vw, 1400px"
-              className="object-cover object-center"
-              priority
-            />
+          {banner.badge}
+        </span>
+      )}
 
-            <div
-              className="absolute inset-0 banner-overlay"
-              style={{
-                opacity: contentVisible ? 1 : 0,
-                background:
-                  banner.textPosition === "left"
-                    ? "linear-gradient(to right, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.22) 60%, transparent 100%)"
-                    : "linear-gradient(to left, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.22) 60%, transparent 100%)",
-              }}
-            />
-          </div>
+      {/* Headline */}
+      {hasText && (
+        <div
+          className="mb-3 sm:mb-4 fade-up"
+          style={{ animationDelay: "0.06s" }}
+        >
+          {banner.headline && (
+            <p className="text-white text-lg sm:text-3xl md:text-4xl font-light leading-tight drop-shadow-lg">
+              {banner.headline}
+            </p>
+          )}
 
-          <div
-            key={`content-${currentSlide}`}
-            className={`absolute inset-0 flex items-center content-panel ${contentVisible ? "visible-content" : "hidden-content"
-              } ${banner.textPosition === "left"
-                ? "justify-start pl-10 md:pl-16"
-                : "justify-end pr-10 md:pr-16"
-              }`}
-          >
-            <div className="flex flex-col max-w-xs md:max-w-sm">
+          {banner.headlineBold && (
+            <p className="text-white text-2xl sm:text-4xl md:text-5xl font-black leading-tight drop-shadow-lg">
+              {banner.headlineBold}
+            </p>
+          )}
 
-              {/* Badge */}
-              {banner.badge && (
-                <span
-                  className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full w-fit mb-3 fade-up"
-                  style={{ animationDelay: "0s" }}
-                >
-                  {banner.badge}
-                </span>
-              )}
-
-              {/* Headline */}
-              {hasText && (
-                <div className="mb-4 fade-up" style={{ animationDelay: "0.06s" }}>
-                  {banner.headline && (
-                    <p className="text-white text-3xl md:text-4xl font-light leading-tight drop-shadow-lg">
-                      {banner.headline}
-                    </p>
-                  )}
-                  {banner.headlineBold && (
-                    <p className="text-white text-4xl md:text-5xl font-black leading-tight drop-shadow-lg">
-                      {banner.headlineBold}
-                    </p>
-                  )}
-                  {banner.headlineSuffix && (
-                    <p className="text-white text-3xl md:text-4xl font-light leading-tight drop-shadow-lg">
-                      {banner.headlineSuffix}
-                    </p>
-                  )}
-                </div>
-              )}
-
-              {/* Divider */}
-              {hasText && (hasCoupon || hasCTA) && (
-                <div
-                  className="w-40 h-px bg-white/50 mb-4 fade-up"
-                  style={{ animationDelay: "0.12s" }}
-                />
-              )}
-
-              {/* Coupon */}
-              {hasCoupon && (
-                <>
-                  <div
-                    className="flex flex-wrap items-center gap-2 mb-2 fade-up"
-                    style={{ animationDelay: "0.18s" }}
-                  >
-                    {banner.couponLabel && (
-                      <span className="text-white text-sm font-semibold drop-shadow">
-                        {banner.couponLabel}
-                      </span>
-                    )}
-                    <span className="bg-yellow-300 text-gray-800 text-sm font-black px-2 py-0.5 rounded shadow">
-                      &quot;{banner.couponCode}&quot;
-                    </span>
-                    {banner.couponSuffix && (
-                      <span className="text-white text-sm font-semibold drop-shadow">
-                        {banner.couponSuffix}
-                      </span>
-                    )}
-                  </div>
-                  <div
-                    className="flex flex-wrap items-center gap-2 mb-5 fade-up"
-                    style={{ animationDelay: "0.24s" }}
-                  >
-                    <span className="bg-yellow-400 text-gray-900 text-sm font-black px-3 py-1 rounded shadow">
-                      {banner.discountText}
-                    </span>
-                    {banner.discountSuffix && (
-                      <span className="text-white text-sm font-bold drop-shadow">
-                        {banner.discountSuffix}
-                      </span>
-                    )}
-                  </div>
-                </>
-              )}
-
-              {/* CTA */}
-              {hasCTA && (
-                <a
-                  href={banner.ctaLink!}
-                  className="inline-flex items-center gap-2 bg-white text-teal-600 font-black text-sm px-6 py-3 rounded-full w-fit shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 fade-up"
-                  style={{ animationDelay: hasCoupon ? "0.3s" : "0.18s" }}
-                >
-                  {banner.cta}
-                  <ChevronRight />
-                </a>
-              )}
-            </div>
-          </div>
-
-          {/* Prev arrow */}
-          <button
-            onClick={() => handleNav("left")}
-            className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white/80 backdrop-blur text-gray-700 flex items-center justify-center shadow hover:bg-white hover:scale-110 transition-all"
-            aria-label="Previous slide"
-          >
-            <ChevronLeft />
-          </button>
-
-          {/* Next arrow */}
-          <button
-            onClick={() => handleNav("right")}
-            className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white/80 backdrop-blur text-gray-700 flex items-center justify-center shadow hover:bg-white hover:scale-110 transition-all"
-            aria-label="Next slide"
-          >
-            <ChevronRight />
-          </button>
-
-          {/* Dot indicators */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
-            {banners.map((b, i) => (
-              <button
-                key={b.id}
-                onClick={() => handleNav(i > currentSlide ? "right" : "left", i)}
-                className={`dot-pill h-2.5 rounded-full border-none cursor-pointer ${i === currentSlide
-                    ? "active w-6 bg-teal-500"
-                    : "w-2.5 bg-white/60 hover:bg-white"
-                  }`}
-                aria-label={`Go to slide ${i + 1}`}
-              />
-            ))}
-          </div>
+          {banner.headlineSuffix && (
+            <p className="text-white text-lg sm:text-3xl md:text-4xl font-light leading-tight drop-shadow-lg">
+              {banner.headlineSuffix}
+            </p>
+          )}
         </div>
+      )}
+
+      {/* Divider */}
+      {hasText && (hasCoupon || hasCTA) && (
+        <div
+          className="w-24 sm:w-40 h-px bg-white/50 mb-3 sm:mb-4 fade-up"
+          style={{ animationDelay: "0.12s" }}
+        />
+      )}
+
+      {/* Coupon */}
+      {hasCoupon && (
+        <>
+          <div
+            className="flex flex-wrap items-center gap-2 mb-2 fade-up"
+            style={{ animationDelay: "0.18s" }}
+          >
+            {banner.couponLabel && (
+              <span className="text-white text-[10px] sm:text-sm font-semibold drop-shadow">
+                {banner.couponLabel}
+              </span>
+            )}
+
+            <span className="bg-yellow-300 text-gray-800 text-[10px] sm:text-sm font-black px-2 py-0.5 rounded shadow">
+              &quot;{banner.couponCode}&quot;
+            </span>
+
+            {banner.couponSuffix && (
+              <span className="text-white text-[10px] sm:text-sm font-semibold drop-shadow">
+                {banner.couponSuffix}
+              </span>
+            )}
+          </div>
+
+          <div
+            className="flex flex-wrap items-center gap-2 mb-4 sm:mb-5 fade-up"
+            style={{ animationDelay: "0.24s" }}
+          >
+            <span className="bg-yellow-400 text-gray-900 text-[10px] sm:text-sm font-black px-2 sm:px-3 py-1 rounded shadow">
+              {banner.discountText}
+            </span>
+
+            {banner.discountSuffix && (
+              <span className="text-white text-[10px] sm:text-sm font-bold drop-shadow">
+                {banner.discountSuffix}
+              </span>
+            )}
+          </div>
+        </>
+      )}
+
+      {/* CTA */}
+      {hasCTA && (
+        <a
+          href={banner.ctaLink!}
+          className="inline-flex items-center gap-2 bg-transparent backdrop-blur-xs  border border-white md:bg-white text-white font-black text-xs sm:text-sm px-4 sm:px-6 py-2 sm:py-3 rounded-full w-fit shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 fade-up"
+          style={{ animationDelay: hasCoupon ? "0.3s" : "0.18s" }}
+        >
+          {banner.cta}
+          <ChevronRight />
+        </a>
+      )}
+    </div>
+  </div>
+
+  {/* Prev arrow */}
+  <button
+    onClick={() => handleNav("left")}
+    className="hidden absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/80 backdrop-blur text-gray-700 md:flex items-center justify-center shadow hover:bg-white hover:scale-110 transition-all"
+    aria-label="Previous slide"
+  >
+    <ChevronLeft />
+  </button>
+
+  {/* Next arrow */}
+  <button
+    onClick={() => handleNav("right")}
+    className="hidden absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/80 backdrop-blur text-gray-700 md:flex items-center justify-center shadow hover:bg-white hover:scale-110 transition-all"
+    aria-label="Next slide"
+  >
+    <ChevronRight />
+  </button>
+
+  {/* Dot indicators */}
+  <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+    {banners.map((b, i) => (
+      <button
+        key={b.id}
+        onClick={() =>
+          handleNav(i > currentSlide ? "right" : "left", i)
+        }
+        className={`dot-pill h-2 rounded-full border-none cursor-pointer ${
+          i === currentSlide
+            ? "active w-5 sm:w-6 bg-teal-500"
+            : "w-2 bg-white/60 hover:bg-white"
+        }`}
+        aria-label={`Go to slide ${i + 1}`}
+      />
+    ))}
+  </div>
+</div>
 
         {/* ── Categories ── */}
         <div className="mt-8">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold text-gray-800 tracking-tight">Categories</h2>
+            <h2 className="text-xl font-bold text-gray-800 tracking-tight">
+              Categories
+            </h2>
             <div className="flex items-center gap-2">
               <button
                 onClick={() => scrollCats("left")}
@@ -356,7 +393,10 @@ const goTo = useCallback(
             </div>
           </div>
 
-          <div ref={catScrollRef} className="cat-scroll flex gap-3 overflow-x-auto pb-2">
+          <div
+            ref={catScrollRef}
+            className="cat-scroll flex gap-3 overflow-x-auto pb-2"
+          >
             {categories.map((cat) => (
               <a
                 key={cat.id}
@@ -372,7 +412,8 @@ const goTo = useCallback(
                       sizes="64px"
                       className="object-cover"
                       onError={(e) => {
-                        (e.currentTarget as HTMLImageElement).style.display = "none";
+                        (e.currentTarget as HTMLImageElement).style.display =
+                          "none";
                       }}
                     />
                   ) : (

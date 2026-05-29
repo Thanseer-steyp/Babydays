@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Baby Washable Padded Langot ( Pack of 2 )",
-    "slug": "baby-padded-langot-p2",
+    "slug": "baby-padded-langot-pack-of-2",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
     "mrp": 749,
@@ -68,7 +68,7 @@
   {
     "id": 2,
     "title": "Baby Washable Padded Langot ( Pack of 5 )",
-    "slug": "baby-padded-langot-p5",
+    "slug": "baby-padded-langot-pack-of-5",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
     "mrp": 1649,
@@ -133,7 +133,7 @@
   {
     "id": 3,
     "title": "Baby Washable Padded Underwear ( Pack of 2 )",
-    "slug": "baby-padded-underwear-p2",
+    "slug": "baby-padded-underwear-pack-of-2",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
     "mrp": 749,
@@ -228,7 +228,7 @@
   {
     "id": 4,
     "title": "Baby Washable Padded Underwear ( Pack of 5 )",
-    "slug": "baby-padded-underwear-p5",
+    "slug": "baby-padded-underwear-pack-of-5",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
     "mrp": 1649,
@@ -323,7 +323,7 @@
   {
     "id": 5,
     "title": "Baby Bath Towel with Cute Prints ( Pack of 3 )",
-    "slug": "baby-bath-towel-p3",
+    "slug": "baby-bath-towel-pack-of-3",
     "age_category": "baby_unisex",
     "product_category": "towels",
     "mrp": 749,
@@ -373,7 +373,7 @@
   {
     "id": 6,
     "title": "Baby Washable Snug Fit Padded Shorts ( Pack of 2 )",
-    "slug": "baby-snug-shorts-p2",
+    "slug": "baby-snug-shorts-pack-of-2",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
     "mrp": 749,
@@ -448,7 +448,7 @@
   {
     "id": 7,
     "title": "Baby Washable Snug Fit Padded Shorts ( Pack of 5 )",
-    "slug": "baby-snug-shorts-p5",
+    "slug": "baby-snug-shorts-pack-of-5",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
     "mrp": 1649,
@@ -533,7 +533,7 @@
   {
     "id": 8,
     "title": "Baby Washable Snug Fit Padded Shorts ( Pack of 2 )",
-    "slug": "baby-snug-shorts-p2-v2",
+    "slug": "baby-snug-shorts-v2-pack-of-2",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
     "mrp": 749,
@@ -659,7 +659,7 @@
   {
     "id": 10,
     "title": "Baby Washable Padded Langot ( Pack of 4 )",
-    "slug": "baby-padded-langot-p4",
+    "slug": "baby-padded-langot-pack-of-4",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
     "mrp": 1120,
@@ -714,7 +714,7 @@
   {
     "id": 11,
     "title": "Baby Washable Bibs ( Pack of 5 )",
-    "slug": "baby-bibs-p5",
+    "slug": "baby-bibs-pack-of-5",
     "age_category": "baby_unisex",
     "product_category": "bibs",
     "mrp": 450,
