@@ -524,11 +524,6 @@
       },
       {
         "id": 6,
-        "media": "/products/p7-main.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 7,
         "media": "/products/p5-vid.mp4",
         "is_main": true
       }
