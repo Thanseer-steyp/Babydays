@@ -189,46 +189,26 @@
     "media": [
       {
         "id": 1,
-        "media": "/products/p3-6.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 2,
         "media": "/products/p3-4.jpeg",
         "is_main": true
       },
       {
-        "id": 3,
+        "id": 2,
         "media": "/products/p3-1.jpeg",
         "is_main": true
       },
       {
-        "id": 4,
-        "media": "/products/p3-7.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 5,
-        "media": "/products/p3-8.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 6,
-        "media": "/products/p3-9.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 7,
+        "id": 3,
         "media": "/products/p3-10.jpeg",
         "is_main": true
       },
       {
-        "id": 8,
+        "id": 4,
         "media": "/products/p3-2.jpeg",
         "is_main": true
       },
       {
-        "id": 9,
+        "id": 5,
         "media": "/products/p3-vid.mp4",
         "is_main": true
       }
@@ -859,7 +839,7 @@
   {
     "id": 13,
     "title": "Baby Washable Snug Fit Padded Shorts ( Pack of 5 )",
-    "slug": "baby-snug-shorts-pack-of-5",
+    "slug": "baby-snug-shorts-v2-pack-of-5",
     "age_category": "baby_unisex",
     "product_category": "snuggies",
     "mrp": 1495,
@@ -910,7 +890,7 @@
     "media": [
       {
         "id": 1,
-        "media": "/products/p12-1.jpeg",
+        "media": "/products/new1.jpeg",
         "is_main": true
       },
       {
@@ -921,6 +901,16 @@
       {
         "id": 3,
         "media": "/products/p12-3.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 4,
+        "media": "/products/new2.jpeg",
+        "is_main": true
+      },
+      {
+        "id": 5,
+        "media": "/products/new3.jpeg",
         "is_main": true
       }
     ],
