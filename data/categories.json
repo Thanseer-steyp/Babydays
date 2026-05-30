@@ -27,16 +27,57 @@
     "bannerImage": "/products/bib-banner.jpeg",
     "bannerBg": "from-pink-100 via-rose-50 to-white",
     "accentColor": "#e91e8c",
-    "icon": "/products/p10-5.jpeg"
+    "icon": "/products/bib-ico2.jpg"
   },
   {
-    "id": 3,
-    "slug": "sleeping-bags",
+    "id": 4,
+    "slug": "sleeping-bag",
+
     "name": "Sleeping Bags",
     "tagline": "Hello world",
     "bannerImage": "/products/p11-banner.jpeg",
     "bannerBg": "from-pink-100 via-rose-50 to-white",
     "accentColor": "#e91e8c",
     "icon": "/products/p11-5.jpeg"
+  },
+  {
+    "id": 5,
+    "slug": "hooded-towel",
+    "name": "Hooded Towels",
+    "tagline": "Hello world",
+    "bannerImage": "/products/hooded-banner.jpeg",
+    "bannerBg": "from-pink-100 via-rose-50 to-white",
+    "accentColor": "#e91e8c",
+    "icon": "/products/hd-towel.jpg"
+  },
+  {
+    "id": 6,
+    "slug": "winter-suit",
+    "name": "Winter Suits",
+    "tagline": "Hello world",
+    "bannerImage": "/products/suits-banner.jpeg",
+    "bannerBg": "from-pink-100 via-rose-50 to-white",
+    "accentColor": "#e91e8c",
+    "icon": "/products/winter-suit-icon.jpg"
+  },
+  {
+    "id": 7,
+    "slug": "net-bed",
+    "name": "Net Beds",
+    "tagline": "Hello world",
+    "bannerImage": "/products/net-bed-banner.jpeg",
+    "bannerBg": "from-pink-100 via-rose-50 to-white",
+    "accentColor": "#e91e8c",
+    "icon": "/products/netbed.jpg"
+  },
+  {
+    "id": 8,
+    "slug": "baby-wipes",
+    "name": "Baby Wipes",
+    "tagline": "Hello world",
+    "bannerImage": "/products/wipes-banner.jpeg",
+    "bannerBg": "from-pink-100 via-rose-50 to-white",
+    "accentColor": "#e91e8c",
+    "icon": "/products/wipes-icon.jpg"
   }
 ]
