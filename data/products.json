@@ -76,7 +76,7 @@
     "lowest_variant_mrp": 1649,
     "lowest_variant_price": 990,
     "main_media": "/products/p2-new-main.jpeg",
-    "delivery_charge": "0",
+    "delivery_charge": 0,
     "material_type": "Combed Cotton Fabric",
     "description": "",
     "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
@@ -146,7 +146,7 @@
     "lowest_variant_mrp": 749,
     "lowest_variant_price": 490,
     "main_media": "/products/p3-new-main.jpeg",
-    "delivery_charge": "0",
+    "delivery_charge": 0,
     "material_type": "Combed Cotton Fabric",
     "description": "",
     "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
@@ -225,8 +225,8 @@
     "price": 990,
     "lowest_variant_mrp": 1649,
     "lowest_variant_price": 990,
-    "main_media": "/products/p4-neww-main.jpeg",
-    "delivery_charge": "0",
+    "main_media": "/products/px-main.png",
+    "delivery_charge": 0,
     "material_type": "Combed Cotton Fabric",
     "description": "",
     "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
@@ -239,7 +239,7 @@
         "id": 1,
         "size": "6-9 Months",
         "color": null,
-        "image": "/products/p4-neww-main.jpeg",
+        "image": "/products/px-main.png",
         "mrp": 1649,
         "price": 990,
         "stock_qty": 10,
@@ -249,7 +249,7 @@
         "id": 2,
         "size": "1 Year",
         "color": null,
-        "image": "/products/p4-neww-main.jpeg",
+        "image": "/products/px-main.png",
         "mrp": 1649,
         "price": 990,
         "stock_qty": 10,
@@ -259,7 +259,7 @@
         "id": 3,
         "size": "2 Year",
         "color": null,
-        "image": "/products/p4-neww-main.jpeg",
+        "image": "/products/px-main.png",
         "mrp": 1649,
         "price": 990,
         "stock_qty": 10,
@@ -269,42 +269,27 @@
     "media": [
       {
         "id": 1,
-        "media": "/products/p3-6.jpeg",
+        "media": "/products/px-1.jpeg",
         "is_main": true
       },
       {
         "id": 2,
-        "media": "/products/p3-4.jpeg",
+        "media": "/products/px-2.jpeg",
         "is_main": true
       },
       {
         "id": 3,
-        "media": "/products/p3-2.jpeg",
+        "media": "/products/px-3.jpeg",
         "is_main": true
       },
       {
         "id": 4,
-        "media": "/products/p3-7.jpeg",
+        "media": "/products/px-4.jpeg",
         "is_main": true
       },
       {
         "id": 5,
-        "media": "/products/p3-8.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 6,
-        "media": "/products/p3-9.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 7,
-        "media": "/products/p3-10.jpeg",
-        "is_main": true
-      },
-      {
-        "id": 8,
-        "media": "/products/p3-3.jpeg",
+        "media": "/products/px-5.jpeg",
         "is_main": true
       },
       {
@@ -326,7 +311,7 @@
     "lowest_variant_mrp": 749,
     "lowest_variant_price": 590,
     "main_media": "/products/p4-main.jpeg",
-    "delivery_charge": "0",
+    "delivery_charge": 0,
     "material_type": "Muslin",
     "description": "",
     "features": "Vibrant\nCute Prints\nPremium Material\nSoft  & gentle",
@@ -376,7 +361,7 @@
     "lowest_variant_mrp": 749,
     "lowest_variant_price": 490,
     "main_media": "/products/p5-new-main.jpeg",
-    "delivery_charge": "0",
+    "delivery_charge": 0,
     "material_type": "Combed Cotton Fabric",
     "description": "",
     "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
@@ -456,7 +441,7 @@
     "lowest_variant_mrp": 1649,
     "lowest_variant_price": 990,
     "main_media": "/products/p7-new-main.jpeg",
-    "delivery_charge": "0",
+    "delivery_charge": 0,
     "material_type": "Combed Cotton Fabric",
     "description": "",
     "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
@@ -469,7 +454,7 @@
         "id": 1,
         "size": "6-9 Months",
         "color": null,
-        "image": "/products/p7-new-main.jpeg",
+        "image": "/products/ps-main.jpeg",
         "mrp": 1649,
         "price": 990,
         "stock_qty": 10,
@@ -479,7 +464,7 @@
         "id": 2,
         "size": "1 Year",
         "color": null,
-        "image": "/products/p7-new-main.jpeg",
+        "image": "/products/ps-main.jpeg",
         "mrp": 1649,
         "price": 990,
         "stock_qty": 10,
@@ -489,7 +474,7 @@
         "id": 3,
         "size": "2 Year",
         "color": null,
-        "image": "/products/p7-new-main.jpeg",
+        "image": "/products/ps-main.jpeg",
         "mrp": 1649,
         "price": 990,
         "stock_qty": 10,
@@ -499,32 +484,32 @@
     "media": [
       {
         "id": 1,
-        "media": "/products/p6-3.jpeg",
+        "media": "/products/ps-1.jpeg",
         "is_main": true
       },
       {
         "id": 2,
-        "media": "/products/p6-2.jpeg",
+        "media": "/products/ps-2.jpeg",
         "is_main": true
       },
       {
         "id": 3,
-        "media": "/products/p6-1.jpeg",
+        "media": "/products/ps-3.jpeg",
         "is_main": true
       },
       {
         "id": 4,
-        "media": "/products/p6-4.jpeg",
+        "media": "/products/ps-4.jpeg",
         "is_main": true
       },
       {
         "id": 5,
-        "media": "/products/p2-7.jpeg",
+        "media": "/products/ps-5.jpeg",
         "is_main": true
       },
       {
         "id": 6,
-        "media": "/products/p5-vid.mp4",
+        "media": "/products/ps-6.jpeg",
         "is_main": true
       }
     ],
@@ -541,7 +526,7 @@
     "lowest_variant_mrp": 749,
     "lowest_variant_price": 490,
     "main_media": "/products/p9-new-main.jpeg",
-    "delivery_charge": "0",
+    "delivery_charge": 0,
     "material_type": "Combed Cotton Fabric",
     "description": "",
     "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",
@@ -622,7 +607,7 @@
     "lowest_variant_mrp": 690,
     "lowest_variant_price": 490,
     "main_media": "/products/p8-3.jpeg",
-    "delivery_charge": "0",
+    "delivery_charge": 0,
     "material_type": "Interlock",
     "description": "",
     "features": "Vibrant\nCute Prints\nPremium Material\nSoft  & gentle",
@@ -779,7 +764,7 @@
   {
     "id": 12,
     "title": "Baby Sleeping Bags ( Pack of 3 )",
-    "slug": "baby-bibs-pack-of-3",
+    "slug": "baby-sleeping-bags-pack-of-3",
     "age_category": "baby_unisex",
     "product_category": "sleeping-bags",
     "mrp": 899,
@@ -842,7 +827,7 @@
     "lowest_variant_mrp": 1495,
     "lowest_variant_price": 990,
     "main_media": "/products/p12-main.jpeg",
-    "delivery_charge": "0",
+    "delivery_charge": 0,
     "material_type": "Combed Cotton Fabric",
     "description": "",
     "features": "Snap-Free Design\nAzo-Free\nSuper Absorbant\n5 Layers of Fabrics\nRash-Free\nSoft Brathable Fabric\nUpto 200 Washes",

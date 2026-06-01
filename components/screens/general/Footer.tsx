@@ -67,7 +67,7 @@ const BabydayFooter: React.FC = () => {
                 </svg>
                 <span>
                   <strong className="text-gray-800 hidden md:inline">Email :</strong>{" "}
-                  connect.babydays@gmail.com
+                  shop.babydays@gmail.com
                 </span>
               </div>
             </div>
