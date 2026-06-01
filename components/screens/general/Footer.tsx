@@ -18,7 +18,7 @@ const BabydayFooter: React.FC = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="flex flex-col gap-3 mt-2">
+            <div className="flex flex-col gap-3 mt-2 items-center md:items-start">
               <div className="flex items-start gap-2 text-sm text-gray-600">
                 <svg
                   className="w-4 h-4 mt-0.5 text-teal-500 flex-shrink-0"
