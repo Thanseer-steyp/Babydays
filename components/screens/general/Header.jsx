@@ -429,7 +429,7 @@ export default function Header() {
                         <img
                           src={cat.icon}
                           alt={cat.name}
-                          className="w-6 h-6 rounded-full object-cover"
+                          className="w-6 h-6 rounded-md object-cover"
                         />
                       )}
                       {cat.name}
@@ -525,7 +525,7 @@ export default function Header() {
                         <img
                           src={cat.icon}
                           alt={cat.name}
-                          className="w-10 h-10 rounded-full object-cover mx-auto"
+                          className="w-10 h-10 rounded-md object-cover mx-auto"
                         />
                       )}
                       {cat.name}

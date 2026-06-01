@@ -294,21 +294,21 @@ export default function ProductDetailClient({ product }) {
 
   const today = new Date();
 
-const startDate = new Date(today);
-startDate.setDate(today.getDate() + 5);
+  const startDate = new Date(today);
+  startDate.setDate(today.getDate() + 5);
 
-const endDate = new Date(today);
-endDate.setDate(today.getDate() + 7);
+  const endDate = new Date(today);
+  endDate.setDate(today.getDate() + 7);
 
-const deliveryStart = startDate.toLocaleDateString("en-IN", {
-  day: "numeric",
-  month: "short",
-});
+  const deliveryStart = startDate.toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "short",
+  });
 
-const deliveryEnd = endDate.toLocaleDateString("en-IN", {
-  day: "numeric",
-  month: "short",
-});
+  const deliveryEnd = endDate.toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "short",
+  });
 
   const discount = mrp > price ? Math.round(((mrp - price) / mrp) * 100) : null;
   const isAvailable =
@@ -443,19 +443,14 @@ const deliveryEnd = endDate.toLocaleDateString("en-IN", {
         {/* ── Right: Details ── */}
         <div className="flex flex-col gap-5">
           {/* Stock + share */}
-          <div className="flex items-center justify-between">
+          {/* <div className="flex items-center justify-between">
             <span
               className={`text-xs font-bold px-4 py-1.5 rounded-full ${isAvailable ? "bg-green-100 text-green-700" : "bg-rose-100 text-rose-600"}`}
             >
               {isAvailable ? "✓ In Stock" : "Out of stock"}
             </span>
-            <button
-              onClick={handleShare}
-              className="text-teal-500 hover:text-teal-700 transition-colors p-1"
-            >
-              <ShareIcon />
-            </button>
-          </div>
+
+          </div> */}
 
           {/* Title */}
           <h1 className="text-xl md:text-2xl font-black text-gray-900 leading-snug w-3/4">
@@ -489,12 +484,12 @@ const deliveryEnd = endDate.toLocaleDateString("en-IN", {
           )}
 
           {/* Price */}
-          <div className="flex items-baseline gap-3 flex-wrap">
-            <span className="text-3xl font-black text-gray-900">
-              ₹{Number(price).toLocaleString("en-IN")}
-            </span>
+          <div className="flex items-center justify-between">
             {mrp > price && (
-              <>
+              <div className="flex items-center gap-3">
+                <span className="text-3xl font-black text-gray-900">
+                  ₹{Number(price).toLocaleString("en-IN")}
+                </span>
                 <span className="text-lg text-gray-400 line-through font-medium">
                   ₹{Number(mrp).toLocaleString("en-IN")}
                 </span>
@@ -503,8 +498,15 @@ const deliveryEnd = endDate.toLocaleDateString("en-IN", {
                     {discount}% off
                   </span>
                 )}
-              </>
+              </div>
             )}
+
+            <button
+              onClick={handleShare}
+              className="text-teal-500 hover:text-teal-700 transition-colors p-1"
+            >
+              <ShareIcon />
+            </button>
           </div>
           {product.delivery_charge === 0 && (
             <p className="text-xs font-bold text-green-600 bg-green-50 px-3 py-1.5 rounded-lg w-fit">
@@ -512,8 +514,8 @@ const deliveryEnd = endDate.toLocaleDateString("en-IN", {
             </p>
           )}
           <p className="text-xs font-bold text-blue-700 bg-blue-50 px-3 py-2 rounded-lg w-fit">
-  Estimated Delivery: {deliveryStart} - {deliveryEnd}
-</p>
+            Estimated Delivery: {deliveryStart} - {deliveryEnd}
+          </p>
 
           <div className="w-full h-px bg-gray-100" />
           <p className="text-sm text-gray-500">
@@ -632,9 +634,11 @@ const deliveryEnd = endDate.toLocaleDateString("en-IN", {
             <button
               onClick={handleBuyNow}
               disabled={!isAvailable}
-              className="flex-1 min-w-[120px] bg-amber-400 hover:bg-amber-500 text-white text-sm font-black py-3 px-6 rounded-xl transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+              className={`flex-1 min-w-[120px] text-white text-sm font-black py-3 px-6 rounded-md transition-all disabled:cursor-not-allowed ${
+                isAvailable ? "bg-amber-400 hover:bg-amber-500" : "bg-red-500"
+              }`}
             >
-              Buy Now
+              {isAvailable ? "Buy Now" : "Out of Stock"}
             </button>
           </div>
 
@@ -643,7 +647,9 @@ const deliveryEnd = endDate.toLocaleDateString("en-IN", {
             <button
               onClick={handleBuyNow}
               disabled={!isAvailable}
-              className="w-full bg-amber-400 hover:bg-amber-500 text-white text-sm font-black py-4 rounded-xl transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+              className={`w-full text-white text-sm font-black py-4 rounded-md transition-all disabled:cursor-not-allowed ${
+                isAvailable ? "bg-amber-400 hover:bg-amber-500" : "bg-red-500"
+              }`}
             >
               {isAvailable ? "Buy Now" : "Out of Stock"}
             </button>
