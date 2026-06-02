@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Wrapper from "@/components/includes/HeaderFooterWrapper";
+import Script from "next/script";
+import FacebookPixel from "@/components/meta-ads/FacebookPixel";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -13,16 +14,7 @@ export const metadata = {
     default: "BabyDays | Premium Baby Products",
     template: "%s | BabyDays",
   },
-  description:
-    "Shop premium baby products — head pillows, swaddle wraps, sherpa sleepers & more.",
-  keywords:
-    "baby products, baby pillow, swaddle wrap, baby blanket, sherpa sleeper",
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://yourdomain.com",
-  ),
-  openGraph: { type: "website", locale: "en_IN", siteName: "BabyDays" },
-  twitter: { card: "summary_large_image" },
-  robots: { index: true, follow: true },
+  description: "Shop premium baby products",
 };
 
 export default function RootLayout({ children }) {
@@ -31,7 +23,23 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Wrapper>{children}</Wrapper>
+        <FacebookPixel />
+        {children}
+        <Script id="facebook-pixel" strategy="afterInteractive">
+          {`
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}
+    (window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '2218634452218518');
+  `}
+        </Script>
       </body>
     </html>
   );
