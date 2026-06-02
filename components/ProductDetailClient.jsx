@@ -453,7 +453,7 @@ export default function ProductDetailClient({ product }) {
           </div> */}
 
           {/* Title */}
-          <h1 className="text-xl md:text-2xl font-black text-gray-900 leading-snug w-3/4">
+          <h1 className="font-sans text-xl md:text-2xl font-bold text-gray-900 w-full">
             {detailedProduct.title}
           </h1>
 
@@ -508,14 +508,16 @@ export default function ProductDetailClient({ product }) {
               <ShareIcon />
             </button>
           </div>
-          {product.delivery_charge === 0 && (
-            <p className="text-xs font-bold text-green-600 bg-green-50 px-3 py-1.5 rounded-lg w-fit">
-              ✓ Free Delivery
+          <div>
+            {product.delivery_charge === 0 && (
+            <p className="text-xs font-bold text-black w-fit mb-2">
+              Free Delivery
             </p>
           )}
-          <p className="text-xs font-bold text-blue-700 bg-blue-50 px-3 py-2 rounded-lg w-fit">
+          <p className="text-xs font-bold text-black w-fit">
             Estimated Delivery: {deliveryStart} - {deliveryEnd}
           </p>
+          </div>
 
           <div className="w-full h-px bg-gray-100" />
           <p className="text-sm text-gray-500">
