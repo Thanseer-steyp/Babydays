@@ -60,6 +60,11 @@
         "id": 6,
         "media": "/products/p1-vid.mp4",
         "is_main": true
+      },
+      {
+        "id": 7,
+        "media": "/products/langot-2-vid.mp4",
+        "is_main": true
       }
     ],
     "created_at": "2026-05-01T00:00:00.000Z"
@@ -130,6 +135,11 @@
       {
         "id": 7,
         "media": "/products/p1-vid.mp4",
+        "is_main": true
+      },
+      {
+        "id": 8,
+        "media": "/products/langot-5-vid.mp4",
         "is_main": true
       }
     ],

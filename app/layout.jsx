@@ -2,6 +2,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import FacebookPixel from "@/components/meta-ads/FacebookPixel";
+import Header from "@/components/screens/general/Header"
+import Footer from "@/components/screens/general/Footer"
+
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -24,7 +27,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <FacebookPixel />
+        <Header />
         {children}
+        <Footer/>
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
     !function(f,b,e,v,n,t,s)
