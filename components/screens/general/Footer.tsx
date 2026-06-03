@@ -32,7 +32,9 @@ const BabydayFooter: React.FC = () => {
                   />
                 </svg>
                 <span>
-                  <strong className="text-gray-800 hidden md:inline">Address:</strong>{" "}
+                  <strong className="text-gray-800 hidden md:inline">
+                    Address:
+                  </strong>{" "}
                   Nedumangad, Kerala
                 </span>
               </div>
@@ -46,8 +48,10 @@ const BabydayFooter: React.FC = () => {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <span>
-                  <strong className="text-gray-800 hidden md:inline">Call Us :</strong> +91
-                  8075261678
+                  <strong className="text-gray-800 hidden md:inline">
+                    Call Us :
+                  </strong>{" "}
+                  +91 8075261678
                 </span>
               </div>
 
@@ -66,7 +70,9 @@ const BabydayFooter: React.FC = () => {
                   />
                 </svg>
                 <span>
-                  <strong className="text-gray-800 hidden md:inline">Email :</strong>{" "}
+                  <strong className="text-gray-800 hidden md:inline">
+                    Email :
+                  </strong>{" "}
                   shop.babydays@gmail.com
                 </span>
               </div>
@@ -126,11 +132,16 @@ const BabydayFooter: React.FC = () => {
         <div className="text-xs text-gray-400 text-center md:text-left">
           <p>
             From{" "}
-            <a href="#" className="text-teal-500 hover:underline font-medium">
+            <a
+              href="https://wa.me/919539366154?text=Hi,%20I%20would%20like%20to%20enquire%20about%20website%20development."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-500 hover:underline font-medium"
+            >
               I&T Creations
             </a>
           </p>
-          <p>© 2026 I&T Creations All rights reserved</p>
+          <p>© 2026 BabyDays All rights reserved</p>
         </div>
 
         {/* Center: Coupon Banner */}
