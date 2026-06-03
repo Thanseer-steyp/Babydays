@@ -244,8 +244,8 @@ export default function Header() {
   const navLinks = [
     { label: "Hot Deals", hot: true, href: "/deals" },
     { label: "New Arrivals", href: "/arrivals" },
-    { label: "All Products", href: "/products" },
-    { label: "All Categories", href: "/categories" },
+    { label: "Products", href: "/products" },
+    { label: "Categories", href: "/categories" },
     { label: "Most Rated", href: "/rated" },
   ];
 
