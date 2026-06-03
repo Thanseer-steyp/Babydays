@@ -2,9 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import FacebookPixel from "@/components/meta-ads/FacebookPixel";
-import Header from "@/components/screens/general/Header"
-import Footer from "@/components/screens/general/Footer"
-
+import Header from "@/components/screens/general/Header";
+import Footer from "@/components/screens/general/Footer";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -18,6 +17,9 @@ export const metadata = {
     template: "%s | BabyDays",
   },
   description: "Shop premium baby products",
+  icons: {
+    icon: "/icons/favicon.png",
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -29,7 +31,7 @@ export default function RootLayout({ children }) {
         <FacebookPixel />
         <Header />
         {children}
-        <Footer/>
+        <Footer />
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
     !function(f,b,e,v,n,t,s)
