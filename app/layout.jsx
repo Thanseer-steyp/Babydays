@@ -16,10 +16,11 @@ export const metadata = {
     default: "BabyDays | Premium Baby Products",
     template: "%s | BabyDays",
   },
-  description: "Shop premium baby products",
+  description:
+    "Discover our wide range of premium baby products, including reusable baby snuggies, baby care essentials, and everyday necessities thoughtfully designed for your baby's comfort, quality care, and convenience.",
   icons: {
-    icon: "/icons/favicon.png",
-  }
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
