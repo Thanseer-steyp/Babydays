@@ -403,7 +403,7 @@ export default function HeroSection() {
                 href={`/category/${cat.slug}`}
                 className="cat-card flex-shrink-0 flex flex-col items-center gap-3 bg-gray-50 hover:bg-white border border-gray-100 hover:border-teal-200 hover:shadow-md rounded-xl px-4 py-4 w-[130px] transition-all duration-200 group cursor-pointer"
               >
-                <div className="cat-circle w-16 h-16 rounded-full flex items-center justify-center shadow-sm overflow-hidden relative bg-gray-100">
+                <div className="cat-circle w-16 h-16 rounded-lg flex items-center justify-center shadow-sm overflow-hidden relative bg-gray-100">
                   {cat.image ? (
                     <Image
                       src={cat.image}

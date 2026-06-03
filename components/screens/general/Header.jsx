@@ -525,7 +525,7 @@ export default function Header() {
                         <img
                           src={cat.icon}
                           alt={cat.name}
-                          className="w-10 h-10 rounded-md object-cover mx-auto"
+                          className="mb-1.5 w-10 h-10 rounded-md object-cover mx-auto"
                         />
                       )}
                       {cat.name}
